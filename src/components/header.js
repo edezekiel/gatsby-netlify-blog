@@ -1,6 +1,8 @@
 import { Link } from "gatsby"
 import React from "react"
 
+import Nav from './nav'
+
 const Header = ({ siteTitle }) => (
   <header>
     <h1>
@@ -8,6 +10,7 @@ const Header = ({ siteTitle }) => (
         {siteTitle}
       </Link>
     </h1>
+    <Nav />
   </header>
 )
 

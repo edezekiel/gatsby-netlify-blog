@@ -9,7 +9,6 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import Nav from './nav'
 import Footer from './footer'
 
 const Layout = ({ children }) => {
@@ -27,7 +26,6 @@ const Layout = ({ children }) => {
   return (
     <>
     <Header siteTitle={data.site.siteMetadata.title} />
-    <Nav />
     <main>{children}</main>
     <Footer />
     </>
