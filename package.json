@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gatsby-ezekiel",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Gatsby starter blog, customized by Ed Ezekiel",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Edward Ezekiel <ed.a.ezekiel@gmail.com>",
   "dependencies": {
     "gatsby": "^2.5.5",
     "gatsby-image": "^2.1.0",
