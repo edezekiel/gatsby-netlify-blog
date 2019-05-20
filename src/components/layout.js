@@ -8,8 +8,9 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Nav from './nav'
 import Header from "./header"
+import Nav from './nav'
+import Footer from './footer'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(
@@ -27,14 +28,8 @@ const Layout = ({ children }) => {
     <>
     <Header siteTitle={data.site.siteMetadata.title} />
     <Nav />
-    <div>
-      <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
-    </div>
+    <main>{children}</main>
+    <Footer /.
     </>
   )
 }
