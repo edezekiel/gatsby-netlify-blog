@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi there</h1>
+    <h1>Page Header</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>{data.allMarkdownRemark.totalCount} Posts</p>
   </Layout>

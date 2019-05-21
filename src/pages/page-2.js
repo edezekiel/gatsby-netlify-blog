@@ -6,8 +6,8 @@ import SEO from "../components/seo"
 
 const SecondPage = ({ data }) => (
   <Layout>
-    <SEO title="Page two" />
-    <h1>My Site's Files</h1>
+    <SEO title="Ed Ezekiel Blog's Site Files | Files" />
+    <h2>My Site's Files</h2>
     <table>
       <thead>
         <tr>

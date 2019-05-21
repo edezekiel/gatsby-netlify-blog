@@ -5,11 +5,7 @@ import Nav from './nav'
 
 const Header = ({ siteTitle }) => (
   <header>
-    <h1>
-      <Link to="/">
-        {siteTitle}
-      </Link>
-    </h1>
+    <Link to="/">{siteTitle}</Link>
     <Nav />
   </header>
 )
