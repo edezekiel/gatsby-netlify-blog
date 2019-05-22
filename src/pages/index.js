@@ -8,14 +8,23 @@ const IndexPage = ({ data }) => (
     <SEO title="Home" />
     <h1>Page Header</h1>
     <p>Welcome to your new Gatsby site.</p>
-    <p>{data.allMarkdownRemark.totalCount} Posts</p>
+    <section>
+      <p>{data.allMarkdownRemark.totalCount} Posts</p>
+      {data.allMarkdownRemark.edges.map(({ node }) => (
+        <article key={node.id}>
+          <h3>{node.frontmatter.title}</h3>
+          <p>{node.frontmatter.date}</p>
+          <p>{node.excerpt}</p>
+        </article>
+      ))}
+    </section>
   </Layout>
 )
 
 
 export const query = graphql`
   query {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount
       edges {
         node {
