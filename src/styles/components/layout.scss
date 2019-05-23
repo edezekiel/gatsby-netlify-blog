@@ -8,11 +8,19 @@ header {
   }
   a {
     font-size: 2rem;
-    text-decoration: none;
   }
   nav {
     a {
       font-size: 1rem;
     }
   }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+article {
+  background: white;
 }

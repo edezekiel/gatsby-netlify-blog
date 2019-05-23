@@ -1,4 +1,5 @@
 import React from "react"
+import { Link, graphql } from 'gatsby'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -12,9 +13,11 @@ const IndexPage = ({ data }) => (
       <p>{data.allMarkdownRemark.totalCount} Posts</p>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <article key={node.id}>
+          <Link to={node.fields.slug}>
           <h3>{node.frontmatter.title}</h3>
           <p>{node.frontmatter.date}</p>
           <p>{node.excerpt}</p>
+          </Link>
         </article>
       ))}
     </section>
@@ -32,6 +35,9 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "DD MMM, YYYY")
+          }
+          fields {
+            slug
           }
           excerpt
         }
