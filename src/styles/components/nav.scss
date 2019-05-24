@@ -1,18 +1,28 @@
-header, nav, h1, h2, .gatsby-image-wrapper {
+header, nav, h1, h2 {
   margin: 0;
 }
 
 header {
   position: fixed;
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   background-color: black;
-  height: 10vh;
-  nav  {
+  nav {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
+    #nav-title {
+      grid-column: 1;
+    }
+    #nav-blog {
+      grid-column: 4;
+    }
+    #nav-projects {
+      grid-column: 5;
+    }
+    #nav-about {
+      grid-column: 6;
+    }
     a {
+      height: 10vh;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -23,9 +33,4 @@ header {
       color: black;
     }
   }
-}
-
-.gatsby-image-wrapper {
-  width: 10vw;
-  height: 5vh;
 }

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Ed Ezekiel Blog`,
+    title: `Ed Ezekiel`,
     description: `Ed Ezekiel Blog built using Gatsby, React, GraphQL, SASS, and CSS Grid`,
     author: `@gatsbyjs`,
   },
