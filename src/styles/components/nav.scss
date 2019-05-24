@@ -1,4 +1,4 @@
-header, nav, h1, h2 {
+header, nav, h1, h2, .gatsby-image-wrapper {
   margin: 0;
 }
 
@@ -27,4 +27,5 @@ header {
 
 .gatsby-image-wrapper {
   width: 10vw;
+  height: 5vh;
 }
