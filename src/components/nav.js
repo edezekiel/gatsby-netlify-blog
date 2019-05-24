@@ -12,7 +12,7 @@ const Nav = ({ siteTitle }) => (
     <Link to="/page-2/" id="nav-projects">
       <h2>Projects</h2>
     </Link>
-    <Link to="/page-2/" id="nav-about">
+    <Link to="/about" id="nav-about">
       <h2>About</h2>
     </Link>
   </nav>
