@@ -5,8 +5,8 @@ import Image from './image'
 const Nav = () => (
   <nav>
     <Link to="/"><Image/></Link>
-    <Link to="/">Go back to the homepage</Link>
-    <Link to="/page-2/">Go to page 2</Link>
+    <Link to="/"><h2>Blog</h2></Link>
+    <Link to="/page-2/"><h2>About</h2></Link>
   </nav>
 )
 

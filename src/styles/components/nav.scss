@@ -1,10 +1,5 @@
-h1, h2 {
+header, nav, h1, h2 {
   margin: 0;
-}
-
-.gatsby-image-wrapper {
-  width: 10vh;
-  height: 10vh;
 }
 
 header {
@@ -13,24 +8,23 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: black;
+  height: 10vh;
+  nav  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+    a:hover {
+      background-color: white;
+      color: black;
+    }
+  }
 }
 
-nav  {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  a {
-    font-size: 1.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-  }
-  a:hover {
-    background-color: white;
-    color: black;
-  }
-}
-
-a {
-  text-decoration: none;
+.gatsby-image-wrapper {
+  width: 10vw;
 }
