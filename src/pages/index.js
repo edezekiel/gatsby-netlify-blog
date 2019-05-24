@@ -7,10 +7,9 @@ import SEO from "../components/seo"
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <h1>Page Header</h1>
-    <p>Welcome to your new Gatsby site.</p>
+    <h1>Hi, I'm Ed Ezekiel</h1>
+    <p>This is my Gatsby JS tutorial site.</p>
     <section>
-      <p>{data.allMarkdownRemark.totalCount} Posts</p>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <article key={node.id}>
           <Link to={node.fields.slug}>

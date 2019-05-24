@@ -1,20 +1,22 @@
 ---
 date: 2019-05-16
-title: 'Getting Started with Vue - An Overview and Walkthrough Tutorial'
+title: 'Looping Using ES6 Syntax (JavaScript)'
 template: post
 thumbnail: '../thumbnails/vue.png'
-slug: getting-started-with-vue
-categories:
-  - JavaScript
-  - Popular
-tags:
-  - javascript
-  - vue
-  - library
 ---
 
-We're in a golden era of JavaScript libraries and frameworks. More and more companies are building out full, dynamic web apps in addition to - or in lieu of - traditional desktop applications. This means things are constantly changing and frameworks are going in and out of vogue, but the core concepts of what we're trying to accomplish remain similar.
+##JavaScript Loops Using for...of and for...in.
+Earlier this week I was working on a coding problem that involved looping through characters in strings. I wanted to loop over all the characters in two strings to determine whether they were anagrams. This kind of task is common in technical interview situations.
 
-Previously, I wrote a [Getting Started with React](/getting-started-with-react) guide helped out a lot of beginner and intermediate developers. [Vue.js](https://github.com/vuejs/vue) is going toe-to-toe with React for popularity among JavaScript developers, so I'd like to offer the same straightforward and concise introduction for those who'd like to learn Vue as well. Let's get started!
+This made me take a closer look at Javascript for loops. I was especially interested in the for...of and for...in loops, so I wrote this post to share what I found out.
 
-#### Prerequisites
+##Looping Through Elements in a String using for...of
+So, what’s a good way to loop through characters in a string? One approach is to use a traditional for loop:
+
+for (let i = 0; i < string.length; i++) {console.log(string.charAt(i))}
+This kind of for loop has been around in Javascript since its inception twenty years ago. However, ES6 introduced some spiffy new syntax.
+
+Since the introduction of ES6, you can use a for...of loop:
+
+for (character of string) {console.log(character)}
+Isn’t the for...of statement much easier to read than the traditional for loop! It also requires less typing, which means less room for error.

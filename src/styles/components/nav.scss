@@ -34,3 +34,16 @@ header {
     }
   }
 }
+
+@media (max-width: 480px) {
+  header {
+    nav {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      a {
+        height: 5vh;
+      }
+    }
+  }
+}

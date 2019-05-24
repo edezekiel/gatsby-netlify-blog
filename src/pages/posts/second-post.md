@@ -1,30 +1,36 @@
 ---
-date: 2019-04-25
-title: 'Using React Router for a Single Page Application'
+date: 2019-05-24
+title: 'Building a Blazing Fast JAMstack App
+'
 template: post
-thumbnail: '../thumbnails/reactrouter.png'
-slug: using-react-router-spa
 categories:
   - JavaScript
 tags:
   - javascript
-  - react
-  - routing
-  - react-router
+
 ---
 
-React doesn't come with a built-in router, but we can easily achieve routing with the `react-router-dom` library. **Routing** is how a web applications direct traffic. (If you know what routing is, feel free to skip this section.)
+I recently attended a meetup in Memphis hosted by Bryan Robinson. He is an accomplished web developer with a focus on creating static sites.
 
-Example: If you go to [taniarascia.com](/), you end up on my home page. If you go to [taniarascia.com/me](/me), you're redirected to my about me page. If you go to [taniarascia.com/categories/javascript](/categories/javascript) or [taniarascia.com/categories/css](/categories/css), you end up on a category listing page. The routes for these pages look something like this:
+This got me excited to finally build my own static site using JAMstack architecture! So, I built this blog template (live) using GatsbyJS and Netlify. Here is the Github Repo.
 
-- `/` - root
-- `/:page_id` - page
-- `/categories/:category_id` - category
+##Lighthouse Audit
+I am very pleased with how the site turned out. I used the Lighthouse tool to audit the gatsby site and my blog. Lighthouse is built into the chrome browser. It is a great automated tool for performing webpage audits.
 
-I'm not actually making a folder called `categories` and filling it with a bunch of files like `javascript.html` or `css.html`, I just have one template and the router knows to direct to the proper template. Once it gets to the template, it can pull from the URL to know which variables to display - for example, JavaScript or CSS related posts.
+##Here are the results:
 
-This website also happens to be a **Single Page Application** (or SPA) - only one page is loaded, and every click to a new page loads some additional JSON data, but does not actually request a new resource like loading `index.html` and `about-me.html` would.
+Lighthouse scores for my React/Rails blog:
 
-I'm going to show you how to set up a simple SPA in React with `react-router-dom`, and pull in data dynamically through the URL. Below is the source of the completed project if you get lost along the way.
+The scores are not terrible, but there is definitely room for improvement.
 
-- [View Source](https://github.com/taniarascia/router-example)
+Lighthouse scores for the JAMstack site:
+
+The JAMstack site almost scores perfectly across the Lighthouse metrics. Navigating through the site reflects these scores: pages loading blazingly fast and it generally feels crisp.
+
+##Resources
+If you are interesting in exploring JAMstack further, here are some of resources I used while learning about this topic:
+
+*WTF is JAMstack? a straightforward primer on the JAMstack architecture.
+*Gatsby Tutorial: This will walk you through your first Gatsby app. There are plenty of “starters” on the site to help you get your first site up and running. I personally used the gatsby default starter.
+*Netlify
+*Tania Rascia: aka my web dev hero.

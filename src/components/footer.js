@@ -2,9 +2,9 @@ import React from "react"
 
 const Footer = () => (
   <footer>
-  <section>
-    <h2>Made by Ed Ezekiel</h2>
-  </section>
+    <section>
+      <h2>Made by Ed Ezekiel</h2>
+    </section>
     <section>
       <h2>
         {new Date().getFullYear()}, Built with
