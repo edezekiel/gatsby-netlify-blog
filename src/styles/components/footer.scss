@@ -9,3 +9,9 @@ footer {
     color: purple;
   }
 }
+
+@media (max-width: 480px) {
+  footer {
+    display: none;
+  }
+}

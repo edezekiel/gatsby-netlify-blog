@@ -37,13 +37,27 @@ header {
 
 @media (max-width: 480px) {
   header {
+    position: fixed;
+    bottom: 0px;
+    background-color: black;
     nav {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      a {
-        height: 5vh;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      #nav-title {
+        display: none;
       }
+      #nav-blog {
+        grid-column: 1;
+      }
+      #nav-projects {
+        grid-column: 2;
+      }
+      #nav-about {
+        grid-column: 3;
+      }
+    }
+    a {
+      border: 1px solid white;
     }
   }
 }
