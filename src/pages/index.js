@@ -8,9 +8,10 @@ const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <h1>Hi, I'm Ed Ezekiel</h1>
-    <p>This is my Gatsby JS tutorial site.</p>
+    <p>Welcome to my Gatsby JS tutorial site.</p>
     <section>
-      {data.allMarkdownRemark.edges.map(({ node }) => (
+      <h2>Recent Blog Posts:</h2>
+      {data.allMarkdownRemark.edges.slice(0, 5).map(({ node }) => (
         <Link to={node.fields.slug}>
           <h3 class="post-index" key={node.id}>
             {node.frontmatter.title} - {node.frontmatter.date}
