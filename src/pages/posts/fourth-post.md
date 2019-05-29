@@ -2,6 +2,7 @@
 date: 2019-05-16
 title: 'Looping Using ES6 Syntax (JavaScript)'
 template: post
+tags: ['third', 'second', 'fifth']
 thumbnail: '../thumbnails/vue.png'
 ---
 

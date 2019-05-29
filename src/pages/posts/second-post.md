@@ -3,10 +3,7 @@ date: 2019-05-24
 title: 'Building a Blazing Fast JAMstack App
 '
 template: post
-categories:
-  - JavaScript
-tags:
-  - javascript
+tags: ['seventh', 'first', 'fifth']
 
 ---
 
