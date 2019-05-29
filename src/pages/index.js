@@ -9,6 +9,10 @@ const IndexPage = ({ data }) => (
     <SEO title="Home" />
     <h1>Hi, I'm Ed Ezekiel</h1>
     <p>Welcome to my Gatsby JS tutorial site.</p>
+    <section id="tags">
+      <h2>Blog Post Tags (coming soon)</h2>
+    </section>
+
     <section id="latest-posts">
       <h2>Latest Blog Posts:</h2>
       {data.allMarkdownRemark.edges.slice(0, 5).map(({ node }) => (
