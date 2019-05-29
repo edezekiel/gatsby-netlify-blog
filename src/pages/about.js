@@ -6,8 +6,8 @@ import SEO from "../components/seo"
 const AboutPage = () => (
   <Layout>
     <SEO title="About" />
-    <h2>About Me</h2>
     <article>
+      <h2>About Me</h2>
       <p>
         My name is Ed Ezekiel. I am a web developer and I recently graduated
         from Flatiron's immersive software engineering bootcamp in Atlanta. This
