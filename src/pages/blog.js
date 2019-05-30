@@ -1,22 +1,35 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
+// Utilites
+import kebabCase from 'lodash/kebabCase'
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi, I'm Ed Ezekiel</h1>
-    <p>Welcome to my Gatsby JS tutorial site.</p>
-
-    <section id="latest-posts">
-      <h2>Latest Blog Posts:</h2>
-      {data.allMarkdownRemark.edges.slice(0, 5).map(({ node }) => (
+    <SEO title="Blog" />
+    <section>
+      <h1>Tags</h1>
+        {data.allMarkdownRemark.group.map(tag => (
+          <div key={tag.fieldValue}>
+            <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+              {tag.fieldValue}
+            </Link>
+          </div>
+        ))}
+          </section>
+    <section>
+      {data.allMarkdownRemark.edges.slice().map(({ node }) => (
         <Link to={node.fields.slug}>
           <h3 class="post-index" key={node.id}>
             {node.frontmatter.title}
           </h3>
+          <p>{node.frontmatter.date}</p>
+          <p>{node.excerpt}</p>
+          <p>{node.frontmatter.tags}</p>
+          <hr/>
         </Link>
       ))}
     </section>
@@ -33,12 +46,17 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "DD MMM, YYYY")
+            tags
           }
           fields {
             slug
           }
           excerpt
         }
+      }
+      group(field: frontmatter___tags) {
+        fieldValue
+        totalCount
       }
     }
   }

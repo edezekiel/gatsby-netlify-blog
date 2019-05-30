@@ -1,26 +1,13 @@
 article {
   background-color: rgb(252, 250, 255);
-  line-height: 1.5rem;
-  text-align: justify;
-}
-
-article p {
-  line-height: 2rem;
 }
 
 #post-show-page {
   padding: 0 5vw 5vh 5vw;
-  border: 1px solid black;
 }
 
 @media (max-width: 480px) {
   #post-show-page {
     padding: 0px;
-  }
-  article p {
-    font-size: 1.5rem;
-  }
-  article h2 {
-    font-size: 2.5rem;
   }
 }

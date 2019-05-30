@@ -6,14 +6,14 @@ const Nav = ({ siteTitle }) => (
     <Link to="/" id="nav-title">
       <h2>{siteTitle}</h2>
     </Link>
-    <Link to="/" id="nav-blog">
+    <Link to="/blog" id="nav-blog">
       <h2>Blog</h2>
     </Link>
-    <Link to="/page-2/" id="nav-projects">
-      <h2>Projects</h2>
+    <Link to="/projects" id="nav-projects">
+      <h2>Work</h2>
     </Link>
     <Link to="/about" id="nav-about">
-      <h2>About</h2>
+      <h2>Me</h2>
     </Link>
   </nav>
 )

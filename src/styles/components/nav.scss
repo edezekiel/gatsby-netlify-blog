@@ -42,22 +42,19 @@ header {
     background-color: #6b37bf;
     nav {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       #nav-title {
-        display: none;
+        display: 1;
       }
       #nav-blog {
-        grid-column: 1;
-      }
-      #nav-projects {
         grid-column: 2;
       }
-      #nav-about {
+      #nav-projects {
         grid-column: 3;
       }
+      #nav-about {
+        grid-column: 4;
+      }
     }
-  }
-  header a {
-    font-size: 1.5rem;
   }
 }
