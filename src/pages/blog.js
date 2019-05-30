@@ -22,7 +22,7 @@ export default class IndexPage extends Component {
 
   render() {
     const data = this.props.data
-    console.log(this.state.currentTag)
+    console.log(this.props.data.allMarkdownRemark.group)
     return (
       <Layout>
         <SEO title="Blog" />
