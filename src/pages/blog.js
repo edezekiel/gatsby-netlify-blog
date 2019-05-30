@@ -2,16 +2,17 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 // Utilites
-import kebabCase from 'lodash/kebabCase'
+import kebabCase from "lodash/kebabCase"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const IndexPage = ({ data }) => (
-  <Layout>
-    <SEO title="Blog" />
-    <section>
-      <h1>Tags</h1>
+const IndexPage = ({ data }) => {
+
+  return (
+    <Layout>
+      <SEO title="Blog" />
+      <section>
         {data.allMarkdownRemark.group.map(tag => (
           <div key={tag.fieldValue}>
             <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
@@ -19,22 +20,25 @@ const IndexPage = ({ data }) => (
             </Link>
           </div>
         ))}
-          </section>
-    <section>
-      {data.allMarkdownRemark.edges.slice().map(({ node }) => (
-        <Link to={node.fields.slug}>
-          <h3 class="post-index" key={node.id}>
-            {node.frontmatter.title}
-          </h3>
-          <p>{node.frontmatter.date}</p>
-          <p>{node.excerpt}</p>
-          <p>{node.frontmatter.tags}</p>
-          <hr/>
-        </Link>
-      ))}
-    </section>
-  </Layout>
-)
+      </section>
+      <section>
+        {data.allMarkdownRemark.edges.map(({ node }) => (
+          <Link to={node.fields.slug}>
+            <h3 class="post-index" key={node.id}>
+              {node.frontmatter.title}
+            </h3>
+            <p>{node.frontmatter.date}</p>
+            <p>{node.excerpt}</p>
+            <p>{node.frontmatter.tags}</p>
+            <hr />
+          </Link>
+        ))}
+      </section>
+    </Layout>
+  )
+}
+
+
 
 export const query = graphql`
   query {
