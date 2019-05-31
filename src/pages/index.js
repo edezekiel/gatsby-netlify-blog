@@ -13,7 +13,7 @@ const IndexPage = ({ data }) => (
     <section id="latest-posts">
       <h2>Latest Blog Posts:</h2>
       {data.allMarkdownRemark.edges.slice(0, 5).map(({ node }) => (
-        <Link to={node.fields.slug}>
+        <Link to={node.fields.slug} slug={node.fields.slug}>
           <h3 class="post-index" key={node.id}>
             {node.frontmatter.title}
           </h3>

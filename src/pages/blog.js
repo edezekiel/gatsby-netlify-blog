@@ -22,7 +22,6 @@ export default class IndexPage extends Component {
 
   render() {
     const data = this.props.data
-    console.log(this.props.data.allMarkdownRemark.group)
     return (
       <Layout>
         <SEO title="Blog" />
@@ -45,7 +44,7 @@ export default class IndexPage extends Component {
             if (!(this.state.currentTag === null)) {
               if (node.frontmatter.tags.includes(this.state.currentTag)) {
                 return (
-                  <Link to={node.fields.slug}>
+                  <Link to={node.fields.slug} slug={node.fields.slug}>
                     <h3 class="post-index" key={node.id}>
                       {node.frontmatter.title}
                     </h3>
