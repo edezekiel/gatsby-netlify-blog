@@ -4,10 +4,11 @@ import Layout from '../components/layout'
 
 export default ({ data }) => {
   const post = data.markdownRemark
-  console.log(data)
+
   return (
     <Layout>
       <article id="post-show-page">
+        <p>{post.fields.slug}</p>
         <h1>{post.frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{__html: post.html}} />
       </article>
@@ -21,6 +22,9 @@ export const query = graphql`
       html
       frontmatter {
         title
+      }
+      fields {
+        slug
       }
     }
   }
