@@ -1,8 +1,6 @@
 ---
-date: 2019-05-24
-title: 'Building a Blazing Fast JAMstack App
-'
-template: post
+date: 2019-02-16
+title: 'Building a Blazing Fast JAMstack App'
 tags: ['seventh', 'first', 'fifth']
 
 ---

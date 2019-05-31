@@ -1,9 +1,7 @@
 ---
-date: 2019-05-16
+date: 2019-03-16
 title: 'Looping Using ES6 Syntax (JavaScript)'
-template: post
-tags: ['JavaScript', 'first', 'second']
-thumbnail: '../thumbnails/vue.png'
+tags: ['first', 'third']
 ---
 
 ##JavaScript Loops Using for...of and for...in.
