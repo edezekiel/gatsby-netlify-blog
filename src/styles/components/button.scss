@@ -1,5 +1,4 @@
 button, button a {
-  border-radius: 15px;
   background-color: #6b37bf;
   padding: 5px;
   font-size: 1rem;
@@ -7,6 +6,7 @@ button, button a {
   font-weight: bold;
   box-shadow: none;
   outline: none;
+  margin: 5px;
 }
 
 button:hover, button a:hover {

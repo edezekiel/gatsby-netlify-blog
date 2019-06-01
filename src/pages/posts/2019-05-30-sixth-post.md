@@ -1,7 +1,7 @@
 ---
 date: 2019-05-30
 title: 'Looping Using ES6 Syntax (JavaScript)'
-tags: ['fourth', 'tenth', 'second']
+tags: []
 ---
 
 ##JavaScript Loops Using for...of and for...in.

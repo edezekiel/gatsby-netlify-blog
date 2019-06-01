@@ -1,7 +1,7 @@
 ---
 date: 2019-02-16
 title: 'Building a Blazing Fast JAMstack App'
-tags: ['seventh', 'first', 'fifth']
+tags: ['React']
 
 ---
 

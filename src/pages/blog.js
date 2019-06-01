@@ -25,14 +25,16 @@ export default class IndexPage extends Component {
     return (
       <Layout>
         <SEO title="Blog" />
-        <h2>{this.state.currentTag === null ? "All Posts" : `${this.state.currentTag}`}</h2>
-        <section>
-          <button onClick={this.resetTags}>All Posts</button>
+        <h1>Blog</h1>
+        <h2>Filter Posts: {this.state.currentTag === null ? "All" : `${this.state.currentTag}`}</h2>
+        <section id="container">
+          <button onClick={this.resetTags}>Reset Filter</button>
           {data.allMarkdownRemark.group.map(tag => (
             <button
               key={tag.fieldValue}
               value={tag.fieldValue}
               onClick={this.setTag}
+              id="flex-item"
             >
               {tag.fieldValue}
             </button>
@@ -50,8 +52,6 @@ export default class IndexPage extends Component {
                     </h3>
                     <p>{node.frontmatter.date}</p>
                     <p>{node.excerpt}</p>
-                    <p>{node.frontmatter.tags}</p>
-                    <hr />
                   </Link>
                 )
               }
@@ -63,8 +63,6 @@ export default class IndexPage extends Component {
                   </h3>
                   <p>{node.frontmatter.date}</p>
                   <p>{node.excerpt}</p>
-                  <p>{node.frontmatter.tags}</p>
-                  <hr />
                 </Link>
               )
             }

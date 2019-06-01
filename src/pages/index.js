@@ -8,7 +8,11 @@ const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <h1>Hi, I'm Ed Ezekiel</h1>
-    <p>Welcome to my Gatsby JS tutorial site.</p>
+    <p>
+      I'm a stack web developer with a passion for solving problems. With
+      experience in Ruby on Rails, JavaScript, and React and a background in
+      law, I discovered web development through working at a legal tech startup.{" "}
+    </p>
 
     <section id="latest-posts">
       <h2>Latest Blog Posts:</h2>
