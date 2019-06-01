@@ -1,0 +1,17 @@
+button, button a {
+  border-radius: 15px;
+  background-color: #6b37bf;
+  padding: 5px;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  box-shadow: none;
+  outline: none;
+}
+
+button:hover, button a:hover {
+  background-color: white;
+  color: #6b37bf;
+  box-shadow: none;
+  outline: none;
+}

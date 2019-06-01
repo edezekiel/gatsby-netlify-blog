@@ -10,7 +10,7 @@ export default ({ data }) => {
   return (
     <Layout>
       <article id="post-show-page">
-        <a href={editOnGithub(post)} id="edit-on-github" target="blank">Edit on Github</a>
+        <button><a href={editOnGithub(post)} id="edit-on-github" target="blank">Edit on Github</a></button>
         <h1>{post.frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{__html: post.html}} />
       </article>
