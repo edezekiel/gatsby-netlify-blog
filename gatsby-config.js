@@ -1,8 +1,8 @@
-const urljoin = require('url-join')
-const config = require('./utils/siteConfig')
+const urljoin = require("url-join")
+const config = require("./utils/siteConfig")
 
 module.exports = {
-  pathPrefix: config.pathPrefix === '' ? '/' : config.pathPrefix,
+  pathPrefix: config.pathPrefix === "" ? "/" : config.pathPrefix,
   siteMetadata: {
     siteUrl: urljoin(config.siteUrl, config.pathPrefix),
     title: config.siteTitle,
@@ -39,6 +39,14 @@ module.exports = {
         display: `standalone`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
+    },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Merriweather', 'Lato']
+        }
+      }
     },
     {
       resolve: `gatsby-transformer-remark`,
