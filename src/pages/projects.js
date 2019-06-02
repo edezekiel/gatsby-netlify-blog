@@ -1,17 +1,13 @@
 import React from "react"
-import { graphql } from 'gatsby'
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 const SecondPage = ({ data }) => (
   <Layout>
     <SEO title="Ed Ezekiel | Projects" />
     <h2>My Site's Files</h2>
-    <FontAwesomeIcon icon={faCoffee} />
     <table>
       <thead>
         <tr>
