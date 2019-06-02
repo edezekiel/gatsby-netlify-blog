@@ -13,10 +13,10 @@ const Nav = ({ siteTitle }) => (
       <h2>Blog</h2>
     </Link>
     <Link to="/projects" id="nav-projects">
-      <h2>Work</h2>
+      <h2>Projects</h2>
     </Link>
     <Link to="/about" id="nav-about">
-      <h2>Me</h2>
+      <h2>About</h2>
     </Link>
   </nav>
 )
