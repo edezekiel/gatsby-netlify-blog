@@ -13,6 +13,8 @@ const Footer = () => (
         {` `}
         <a href="https://www.gatsbyjs.org">Netlify</a>
       </h2>
+      <p>Thank you <a href="https://fontawesome.com/license" target="blank">FontAwesome</a> for
+      the amazing symbols.</p>
     </section>
   </footer>
 )
