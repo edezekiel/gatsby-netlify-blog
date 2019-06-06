@@ -1,13 +1,15 @@
-import React from 'react'
+import React from "react"
 
-const Project = (props) => {
+const Project = props => {
   return (
-    <a className="project" href={props.project.link}>
+    <div className="project" style={{backgroundImage: `url(${props.project.img})`}}>
       <h3>{props.project.title}</h3>
-<img src={props.project.img} alt="boohoo"/>
 
       <p>{props.project.description}</p>
-    </a>
+      <button>
+        <a href={props.project.link}>Visit Project</a>
+      </button>
+    </div>
   )
 }
 
