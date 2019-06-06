@@ -2,7 +2,6 @@
 date: 2018-11-16
 title: 'Groupie - My First CLI'
 tags: ['Ruby']
-category: project
 ---
 
 This week I wrote my first Command Line Interface! It's called "Groupie," and it helps people get tickets to see their favorite concerts.

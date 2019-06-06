@@ -1,0 +1,26 @@
+.projectHeader {
+  display: flex;
+  flex-direction: column;
+  background-color: orange;
+  align-items: center;
+  justify-content: center;
+  h1, h2 {
+    margin: 0;
+  }
+}
+
+.projectContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1vw;
+}
+
+.project {
+  height: 30vh;
+  border: solid black 1px;
+  border-radius: 10px;
+  background-color: powderblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
