@@ -1,0 +1,183 @@
+@import '/media.scss';
+
+// HTML
+//----------------------------------------------------------------------
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+// BODY
+//----------------------------------------------------------------------
+body {
+  margin: 0;
+  background-color: rgb(252, 250, 255);
+}
+
+// NAV
+//----------------------------------------------------------------------
+header, nav, h1, h2 {
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #6b37bf;
+  nav {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    #nav-title {
+      grid-column: 1;
+    }
+    #nav-blog {
+      grid-column: 4;
+    }
+    #nav-projects {
+      grid-column: 5;
+    }
+    #nav-about {
+      grid-column: 6;
+    }
+    a {
+      height: 10vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+    a:hover {
+      background-color: rgb(252, 250, 255);
+      color: black;
+    }
+  }
+}
+
+// MAIN
+//----------------------------------------------------------------------
+main {
+  min-height: 60vh;
+  width: 80vw;
+  margin: 0 auto;
+  background-color: rgb(252, 250, 255);
+  padding: 15vh 5vw 0 5vw;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+// FOOTER
+//----------------------------------------------------------------------
+footer {
+  height: 30vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  background-color: rgb(252, 250, 255);
+  a {
+    color: purple;
+  }
+}
+
+// ARTICLE
+//----------------------------------------------------------------------
+article {
+  background-color: rgb(252, 250, 255);
+}
+
+.postShowPage {
+  padding: 0 5vw 5vh 5vw;
+}
+
+
+// FLEX
+//----------------------------------------------------------------------
+.pageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+// BUTTON
+//----------------------------------------------------------------------
+button, button a {
+  background-color: #6b37bf;
+  padding: 5px;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  box-shadow: none;
+  outline: none;
+  margin: 5px;
+}
+
+button:hover, button a:hover {
+  background-color: white;
+  color: #6b37bf;
+  box-shadow: none;
+  outline: none;
+}
+
+// PROJECT
+//----------------------------------------------------------------------
+.projectHeader {
+  display: flex;
+  flex-direction: column;
+  background-color: orange;
+  align-items: center;
+  justify-content: center;
+  h1, h2 {
+    margin: 0;
+  }
+}
+
+.projectContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1vw;
+}
+
+.project {
+  height: 30vh;
+  border: solid black 1px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+// GATSBY HIGHLIGHT
+//----------------------------------------------------------------------
+
+/**
+ * Add back the container background-color, border-radius, padding, margin
+ * and overflow that we removed from <pre>.
+ */
+.gatsby-highlight {
+  background-color: #2d2d2d;
+  border-radius: 0.3em;
+  margin: 0.5em 0;
+  padding: 1em;
+  overflow: auto;
+}
+
+/**
+ * Remove the default PrismJS theme background-color, border-radius, margin,
+ * padding and overflow.
+ * 1. Make the element just wide enough to fit its content.
+ * 2. Always fill the visible space in .gatsby-highlight.
+ * 3. Adjust the position of the line numbers
+ */
+.gatsby-highlight pre[class*="language-"] {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  overflow: initial;
+  float: left; /* 1 */
+  min-width: 100%; /* 2 */
+}

@@ -27,7 +27,7 @@ export default class IndexPage extends Component {
         <SEO title="Blog" />
         <h1>Blog</h1>
         <h2>Filter Posts: {this.state.currentTag === null ? "All" : `${this.state.currentTag}`}</h2>
-        <section id="container">
+        <section className="pageContainer">
           <button onClick={this.resetTags}>Reset Filter</button>
           {data.allMarkdownRemark.group.map(tag => (
             <button

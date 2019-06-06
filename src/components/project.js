@@ -2,7 +2,10 @@ import React from "react"
 
 const Project = props => {
   return (
-    <div className="project" style={{backgroundImage: `url(${props.project.img})`}}>
+    <div
+      className="project"
+      style={{ background: `url(${props.project.img})`, backgroundPosition: "center", backgroundSize: "cover", backgroundRepeat: "no-repeat" }}
+    >
       <h3>{props.project.title}</h3>
 
       <p>{props.project.description}</p>
