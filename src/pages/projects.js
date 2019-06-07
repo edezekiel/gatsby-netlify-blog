@@ -26,7 +26,7 @@ export default class IndexPage extends Component {
             <a href="mailto:ed.a.ezekiel@gmail.com">Email me</a>.
           </h2>
         </section>
-        <section className="projectContainer">
+        <section className="projectsContainer">
           {projects.map(project => {
             return (<Project project={project} />)
           })}
