@@ -1,7 +1,7 @@
 // HTML
 //----------------------------------------------------------------------
 html {
-    font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 // BODY
@@ -13,7 +13,10 @@ body {
 
 // NAV
 //----------------------------------------------------------------------
-header, nav, h1, h2 {
+header,
+nav,
+h1,
+h2 {
   margin: 0;
 }
 
@@ -89,7 +92,6 @@ article {
   padding: 0 5vw 5vh 5vw;
 }
 
-
 // FLEX
 //----------------------------------------------------------------------
 .pageContainer {
@@ -101,7 +103,8 @@ article {
 
 // BUTTON
 //----------------------------------------------------------------------
-button, button a {
+button,
+button a {
   background-color: #6b37bf;
   padding: 5px;
   font-size: 1rem;
@@ -112,7 +115,8 @@ button, button a {
   margin: 5px;
 }
 
-button:hover, button a:hover {
+button:hover,
+button a:hover {
   background-color: white;
   color: #6b37bf;
   box-shadow: none;
@@ -130,7 +134,8 @@ button:hover, button a:hover {
   margin-bottom: 20px;
   padding: 10px;
   border-radius: 10px;
-  h1, h2 {
+  h1,
+  h2 {
     padding: 10px;
   }
 }
@@ -142,7 +147,7 @@ button:hover, button a:hover {
 }
 
 .project {
-  height: 30vh;
+  height: 40vh;
   border: solid black 1px;
   border-radius: 10px;
   display: flex;
@@ -151,6 +156,24 @@ button:hover, button a:hover {
   justify-content: center;
 }
 
+
+.project:hover {
+  opacity: 0.6;
+}
+
+.projectText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.projectText:hover {
+  opacity: 1;
+}
 
 // GATSBY HIGHLIGHT
 //----------------------------------------------------------------------
@@ -185,6 +208,13 @@ button:hover, button a:hover {
 
 // MEDIA QUERIES
 //----------------------------------------------------------------------
+
+@media (max-width: 768px) {
+  .projectContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 480px) {
   header {
     position: fixed;
@@ -206,18 +236,15 @@ button:hover, button a:hover {
         grid-column: 4;
       }
     }
-  };
+  }
   main {
     padding: 5vw;
     min-height: 90vh;
     width: 90vw;
     margin-bottom: 10vh;
-  };
+  }
   #post-show-page {
     padding: 0px;
-  };
-  .projectContainer {
-    grid-template-columns: 1fr;
   }
   footer {
     display: none;
