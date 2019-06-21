@@ -1,6 +1,6 @@
 import React from "react"
 
-const Project = props => {
+function Project(props) {
   return (
     <div className="projectCard">
       <img className="projectImage" src={props.project.img} />

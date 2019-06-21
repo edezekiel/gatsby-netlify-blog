@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Nav from "./nav"
 import Footer from "./footer"
 
-const Layout = ({ children }) => {
+function Layout({ children }) {
   const data = useStaticQuery(
     graphql`
       query SiteTitleQuery {
