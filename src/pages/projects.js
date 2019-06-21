@@ -1,12 +1,37 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Project from "../components/project"
 
-import { projects } from "../projects/projects.js"
+function ProjectsPage(props) {
+  const data = useStaticQuery(graphql`
+    query {
+      firstProjectImage: file(relativePath: { eq: "first.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      secondProjectImage: file(relativePath: { eq: "second.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      thirdProjectImage: file(relativePath: { eq: "third.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
 
-function ProjectsPage() {
   return (
     <Layout>
       <SEO title={"Projects"} />
@@ -18,9 +43,27 @@ function ProjectsPage() {
         </h2>
       </section>
       <section className="projectsContainer">
-        {projects.map((project, i) => {
-          return <Project project={project} key={i} />
-        })}
+        <a href={"#"}>
+          <div>
+            <Img fluid={data.firstProjectImage.childImageSharp.fluid} />
+            <h3>First Project</h3>
+            <p>Description goes here</p>
+          </div>
+        </a>
+        <a href={"#"}>
+          <div>
+            <Img fluid={data.secondProjectImage.childImageSharp.fluid} />
+            <h3>Second Project</h3>
+            <p>Description goes here</p>
+          </div>
+        </a>
+        <a href={"#"}>
+          <div>
+            <Img fluid={data.thirdProjectImage.childImageSharp.fluid} />
+            <h3>Third Project</h3>
+            <p>Description goes here</p>
+          </div>
+        </a>
       </section>
     </Layout>
   )
