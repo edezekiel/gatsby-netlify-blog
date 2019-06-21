@@ -17,9 +17,9 @@ function IndexPage({ data }) {
 
       <section id="latest-posts">
         <h2>Latest Blog Posts:</h2>
-        {data.allMarkdownRemark.edges.slice(0, 5).map(({ node }) => (
-          <Link to={node.fields.slug} slug={node.fields.slug}>
-            <h3 class="post-index" key={node.id}>
+        {data.allMarkdownRemark.edges.slice(0, 5).map(({ node }, i) => (
+          <Link to={node.fields.slug} slug={node.fields.slug} key={i}>
+            <h3 className="post-index">
               {node.frontmatter.title}
             </h3>
           </Link>

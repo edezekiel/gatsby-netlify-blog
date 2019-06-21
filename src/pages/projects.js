@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -18,8 +18,8 @@ function ProjectsPage() {
         </h2>
       </section>
       <section className="projectsContainer">
-        {projects.map(project => {
-          return <Project project={project} />
+        {projects.map((project, i) => {
+          return <Project project={project} key={i} />
         })}
       </section>
     </Layout>

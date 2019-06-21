@@ -5,7 +5,7 @@ function Project(props) {
     <a href={props.project.link}>
 
     <div className="projectCard">
-      <img className="projectImage" src={props.project.img} />
+      <img className="projectImage" src={props.project.img} alt={"project demo"}/>
       <div className="overlay">
         <h3>{props.project.title}</h3>
         <p>{props.project.description}</p>

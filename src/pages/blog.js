@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
@@ -27,12 +27,12 @@ function IndexPage(props) {
       <section />
 
       <section>
-        {props.data.allMarkdownRemark.edges.map(({ node }) => {
+        {props.data.allMarkdownRemark.edges.map(({ node }, i) => {
           if (!(currentTag === null)) {
             if (node.frontmatter.tags.includes(currentTag)) {
               return (
                 <Link to={node.fields.slug} slug={node.fields.slug}>
-                  <h3 class="post-index" key={node.id}>
+                  <h3 className="post-index" key={i}>
                     {node.frontmatter.title}
                   </h3>
                   <p>{node.frontmatter.date}</p>
@@ -43,7 +43,7 @@ function IndexPage(props) {
           } else {
             return (
               <Link to={node.fields.slug}>
-                <h3 class="post-index" key={node.id}>
+                <h3 className="post-index" key={node.id}>
                   {node.frontmatter.title}
                 </h3>
                 <p>{node.frontmatter.date}</p>
