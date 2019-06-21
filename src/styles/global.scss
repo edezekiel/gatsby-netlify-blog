@@ -103,8 +103,7 @@ article {
 
 // BUTTON
 //----------------------------------------------------------------------
-button,
-.projectLink {
+button {
   background-color: #6b37bf;
   padding: 10px;
   font-size: 1rem;
@@ -116,8 +115,7 @@ button,
   border-radius: 10px;
 }
 
-button:hover,
-.projectLink:hover {
+button:hover {
   background-color: white;
   color: #6b37bf;
   box-shadow: none;
