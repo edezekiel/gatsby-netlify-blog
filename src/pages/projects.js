@@ -56,7 +56,7 @@ const projects = [
   },
 ]
 
-function IndexPage() {
+function ProjectsPage() {
   return (
     <Layout>
       <SEO title={"Projects"} />
@@ -76,4 +76,4 @@ function IndexPage() {
   )
 }
 
-export default IndexPage
+export default ProjectsPage
