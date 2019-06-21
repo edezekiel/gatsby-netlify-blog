@@ -7,9 +7,9 @@ const Project = props => {
       <div className="overlay">
         <h3>{props.project.title}</h3>
         <p>{props.project.description}</p>
-        <button>
-          <a href={props.project.link}>Visit Project</a>
-        </button>
+        <a href={props.project.link} className="projectLink">
+          Visit Project
+        </a>
       </div>
     </div>
   )

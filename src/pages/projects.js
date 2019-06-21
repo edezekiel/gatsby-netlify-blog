@@ -5,13 +5,13 @@ import SEO from "../components/seo"
 import Project from "../components/project"
 
 const projects = [
-  { title: "first", img: "https://www.grouphealth.ca/wp-content/uploads/2018/05/placeholder-image-300x225.png", description: "todo", link: "todo" },
-  { title: "second", img: "https://www.grouphealth.ca/wp-content/uploads/2018/05/placeholder-image-300x225.png", description: "todo", link: "todo" },
-  { title: "third", img: "https://www.grouphealth.ca/wp-content/uploads/2018/05/placeholder-image-300x225.png", description: "todo", link: "todo" },
-  { title: "fourth", img: "https://www.grouphealth.ca/wp-content/uploads/2018/05/placeholder-image-300x225.png", description: "todo", link: "todo" },
-  { title: "fifth", img: "https://www.grouphealth.ca/wp-content/uploads/2018/05/placeholder-image-300x225.png", description: "todo", link: "todo" },
-  { title: "sixth", img: "https://www.grouphealth.ca/wp-content/uploads/2018/05/placeholder-image-300x225.png", description: "todo", link: "todo" },
-  { title: "seventh", img: "https://www.grouphealth.ca/wp-content/uploads/2018/05/placeholder-image-300x225.png", description: "todo", link: "todo" },
+  { title: "first", img: "https://www.grouphealth.ca/wp-content/uploads/2018/05/placeholder-image-300x225.png", description: "todo", link: "/" },
+  { title: "second", img: "https://www.grouphealth.ca/wp-content/uploads/2018/05/placeholder-image-300x225.png", description: "todo", link: "/" },
+  { title: "third", img: "https://www.grouphealth.ca/wp-content/uploads/2018/05/placeholder-image-300x225.png", description: "todo", link: "/" },
+  { title: "fourth", img: "https://www.grouphealth.ca/wp-content/uploads/2018/05/placeholder-image-300x225.png", description: "todo", link: "/" },
+  { title: "fifth", img: "https://www.grouphealth.ca/wp-content/uploads/2018/05/placeholder-image-300x225.png", description: "todo", link: "/" },
+  { title: "sixth", img: "https://www.grouphealth.ca/wp-content/uploads/2018/05/placeholder-image-300x225.png", description: "todo", link: "/" },
+  { title: "seventh", img: "https://www.grouphealth.ca/wp-content/uploads/2018/05/placeholder-image-300x225.png", description: "todo", link: "/" },
 ]
 
 export default class IndexPage extends Component {
