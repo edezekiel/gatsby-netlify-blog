@@ -1,63 +1,37 @@
-import React, { Component } from "react"
+import React, { useState, useEffect } from "react"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-export default class IndexPage extends Component {
-  state = {
-    allTags: this.props.data.allMarkdownRemark.group.map(
-      item => item.fieldValue
-    ),
-    currentTag: null,
-  }
+function IndexPage(props) {
+  const [currentTag, setCurrentTag] = useState(null)
 
-  setTag = e => {
-    this.setState({ currentTag: e.target.value })
-  }
+  return (
+    <Layout>
+      <SEO title="Blog" />
+      <h1>Blog</h1>
+      <h2>Filter Posts: {currentTag === null ? "All" : `${currentTag}`}</h2>
+      <section className="pageContainer" />
+      <button onClick={() => setCurrentTag(null)}>Reset Filter</button>
+      {props.data.allMarkdownRemark.group.map(tag => (
+        <button
+          key={tag.fieldValue}
+          value={tag.fieldValue}
+          onClick={() => setCurrentTag(tag.fieldValue)}
+          id="flex-item"
+        >
+          {tag.fieldValue}
+        </button>
+      ))}
+      <section />
 
-  resetTags = () => {
-    this.setState({ currentTag: null })
-  }
-
-  render() {
-    const data = this.props.data
-    return (
-      <Layout>
-        <SEO title="Blog" />
-        <h1>Blog</h1>
-        <h2>Filter Posts: {this.state.currentTag === null ? "All" : `${this.state.currentTag}`}</h2>
-        <section className="pageContainer">
-          <button onClick={this.resetTags}>Reset Filter</button>
-          {data.allMarkdownRemark.group.map(tag => (
-            <button
-              key={tag.fieldValue}
-              value={tag.fieldValue}
-              onClick={this.setTag}
-              id="flex-item"
-            >
-              {tag.fieldValue}
-            </button>
-          ))}
-        </section>
-
-        <section>
-          {data.allMarkdownRemark.edges.map(({ node }) => {
-            if (!(this.state.currentTag === null)) {
-              if (node.frontmatter.tags.includes(this.state.currentTag)) {
-                return (
-                  <Link to={node.fields.slug} slug={node.fields.slug}>
-                    <h3 class="post-index" key={node.id}>
-                      {node.frontmatter.title}
-                    </h3>
-                    <p>{node.frontmatter.date}</p>
-                    <p>{node.excerpt}</p>
-                  </Link>
-                )
-              }
-            } else {
+      <section>
+        {props.data.allMarkdownRemark.edges.map(({ node }) => {
+          if (!(currentTag === null)) {
+            if (node.frontmatter.tags.includes(currentTag)) {
               return (
-                <Link to={node.fields.slug}>
+                <Link to={node.fields.slug} slug={node.fields.slug}>
                   <h3 class="post-index" key={node.id}>
                     {node.frontmatter.title}
                   </h3>
@@ -66,11 +40,21 @@ export default class IndexPage extends Component {
                 </Link>
               )
             }
-          })}
-        </section>
-      </Layout>
-    )
-  }
+          } else {
+            return (
+              <Link to={node.fields.slug}>
+                <h3 class="post-index" key={node.id}>
+                  {node.frontmatter.title}
+                </h3>
+                <p>{node.frontmatter.date}</p>
+                <p>{node.excerpt}</p>
+              </Link>
+            )
+          }
+        })}
+      </section>
+    </Layout>
+  )
 }
 
 export const query = graphql`
@@ -98,3 +82,5 @@ export const query = graphql`
     }
   }
 `
+
+export default IndexPage
