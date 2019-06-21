@@ -2,6 +2,7 @@
 date: 2019-04-16
 title: 'Looping Using ES6 Syntax (JavaScript)'
 tags: ['Ruby/Rails']
+hero: ../../images/first.png
 ---
 
 ##JavaScript Loops Using for...of and for...in.

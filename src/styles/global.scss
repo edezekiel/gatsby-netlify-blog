@@ -92,6 +92,9 @@ article {
   padding: 0 5vw 5vh 5vw;
 }
 
+.postShowPageTitle {
+  text-align: center;
+}
 // FLEX
 //----------------------------------------------------------------------
 .pageContainer {
@@ -113,6 +116,12 @@ button {
   outline: none;
   margin: 5px;
   border-radius: 10px;
+  a {
+    color: white;
+  }
+  a:hover {
+    color: #6b37bf;
+  }
 }
 
 button:hover {
@@ -183,7 +192,6 @@ button:hover {
 .projectCard:hover .projectImage {
   opacity: 0;
 }
-
 
 
 // GATSBY HIGHLIGHT

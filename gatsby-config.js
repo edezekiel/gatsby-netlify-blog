@@ -41,17 +41,23 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ['Merriweather', 'Lato']
-        }
-      }
+          families: ["Merriweather", "Lato"],
+        },
+      },
     },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1080,
+            },
+          },
           {
             resolve: `gatsby-remark-prismjs`,
             options: {

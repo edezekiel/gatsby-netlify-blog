@@ -2,7 +2,7 @@
 date: 2019-02-16
 title: 'Building a Blazing Fast JAMstack App'
 tags: ['React']
-
+hero: ../../images/first.png
 ---
 
 I recently attended a meetup in Memphis hosted by Bryan Robinson. He is an accomplished web developer with a focus on creating static sites.
