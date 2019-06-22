@@ -10,12 +10,12 @@ function IndexPage({ data }) {
     <Layout>
       <SEO title="Home" />
       <h1>Hi, I'm Ed Ezekiel</h1>
-      <p>
-        I'm a full stack web developer with a passion for solving problems. With
-        experience in JavaScript, React, and Ruby on Rails and a background in
-        law, I discovered web development through working at a legal tech startup.
-      </p>
-
+        <p className="headingCaption">
+          I'm a full stack web developer with a passion for solving problems.
+          With experience in JavaScript, React, and Ruby on Rails and a
+          background in law, I discovered web development through working at a
+          legal tech startup.
+        </p>
       <section className="latestPosts">
         <h2>Latest Posts</h2>
         {data.allMarkdownRemark.edges.slice(0, 5).map(({ node }, i) => (

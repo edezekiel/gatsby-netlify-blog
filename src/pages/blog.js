@@ -26,7 +26,7 @@ function IndexPage(props) {
         ))}
       </section>
 
-      <section className="postLink">
+      <section>
         {props.data.allMarkdownRemark.edges.map(({ node }, i) => {
           if (!(currentTag === null)) {
             if (node.frontmatter.tags.includes(currentTag)) {

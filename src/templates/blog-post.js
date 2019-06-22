@@ -1,20 +1,24 @@
-import React from 'react'
-import { graphql } from 'gatsby'
+import React from "react"
+import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import Layout from '../components/layout'
-import { editOnGithub } from '../../utils/global'
+import Layout from "../components/layout"
+import { editOnGithub } from "../../utils/global"
 
 export default ({ data }) => {
   const post = data.markdownRemark
 
   return (
     <Layout>
-      <article className="postShowPage">
-        <h1 className="postShowPageTitle">{post.frontmatter.title}</h1>
-        <Img fluid={post.frontmatter.hero.childImageSharp.fluid} />
-        <button><a href={editOnGithub(post)} id="edit-on-github" target="blank">Edit on Github</a></button>
-        <div dangerouslySetInnerHTML={{__html: post.html}} />
+      <h1 className="postShowPageTitle">{post.frontmatter.title}</h1>
+      <Img className="postShowPageImage" fluid={post.frontmatter.hero.childImageSharp.fluid} />
+      <article>
+        <button>
+          <a href={editOnGithub(post)} target="blank">
+            Edit on Github
+          </a>
+        </button>
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </article>
     </Layout>
   )
@@ -22,13 +26,13 @@ export default ({ data }) => {
 
 export const query = graphql`
   query($slug: String!) {
-    markdownRemark(fields: {slug: { eq: $slug } }) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
         title
         hero {
           childImageSharp {
-            fluid(maxWidth: 1080) {
+            fluid {
               ...GatsbyImageSharpFluid
             }
           }

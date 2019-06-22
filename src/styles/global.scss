@@ -1,24 +1,33 @@
+html,
+body,
+header,
+nav,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  padding: 2vh 0 2vh 0;
+  margin: 0;
+}
+
 // HTML
 //----------------------------------------------------------------------
 html {
   font-family: "Lato", sans-serif;
+  box-sizing: border-box;
 }
 
 // BODY
 //----------------------------------------------------------------------
 body {
-  margin: 0;
   background-color: rgb(252, 250, 255);
 }
 
 // NAV
 //----------------------------------------------------------------------
-header,
-nav,
-h1,
-h2 {
-  margin: 0;
-}
 
 header {
   position: fixed;
@@ -57,11 +66,12 @@ header {
 // MAIN
 //----------------------------------------------------------------------
 main {
+  box-sizing: border-box;
   min-height: 60vh;
   width: 80vw;
   margin: 0 auto;
   background-color: rgb(252, 250, 255);
-  padding: 16vh 5vw 15vh 5vw;
+  padding: 18vh 0 15vh 0;
 }
 
 a {
@@ -72,6 +82,7 @@ a {
 hr {
   border: 0.5px solid #6b37bf;
 }
+
 
 // PostLinks and Tags
 //----------------------------------------------------------------------
@@ -109,21 +120,25 @@ hr {
 //----------------------------------------------------------------------
 article {
   background-color: rgb(252, 250, 255);
-}
-
-.postShowPage {
-  padding: 0 5vw 5vh 5vw;
+  margin: 0;
+  text-align: justify;
+  padding: 0 5vw 0 5vw;
+  p, h1, h2, table, ul {
+    padding: 2vh 0 0 0;
+  }
+  a {
+    color: blue;
+  }
 }
 
 .postShowPageTitle {
   text-align: center;
 }
 
-// FLEX
-//----------------------------------------------------------------------
-.pageContainer {
-  display: flex;
-  flex-direction: column;
+.postShowPageImage {
+  margin: 5vh 5vw 5vh 5vw;
+  border-radius: 10px;
+  box-shadow: 0 0 5px;
 }
 
 // FOOTER
@@ -277,9 +292,7 @@ button:hover {
 
 @media (max-width: 480px) {
   header {
-    // position: fixed;
     bottom: 0px;
-    height: 10vh;
     background-color: #6b37bf;
     nav {
       display: grid;
@@ -296,16 +309,28 @@ button:hover {
       #nav-contact {
         grid-column: 4;
       }
+      h2 {
+        font-size: 1.3rem;
+      }
     }
   }
   main {
-    padding: 5vw;
+    padding: 5vh 0 0 0;
+    margin: 0;
     min-height: 90vh;
-    width: 90vw;
+    width: 100vw;
     margin-bottom: 10vh;
   }
-  #post-show-page {
-    padding: 0px;
+  article, .latestPosts, .headingCaption, .postTags, .postLink {
+    padding: 0 5vw 0 5vw;
+  }
+  h1 {
+    padding: 2vh 0 0 5vw;
+  }
+  .postShowPageImage {
+    border-radius: 0;
+    margin: 5vh 0 5vh 0;
+    box-shadow: none;
   }
   footer {
     display: none;
