@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import PostLink from "../components/PostLink"
 
 function IndexPage({ data }) {
   return (
@@ -18,11 +19,7 @@ function IndexPage({ data }) {
       <section id="latest-posts">
         <h2>Latest Blog Posts:</h2>
         {data.allMarkdownRemark.edges.slice(0, 5).map(({ node }, i) => (
-          <Link to={node.fields.slug} slug={node.fields.slug} key={i}>
-            <h3 className="post-index">
-              {node.frontmatter.title}
-            </h3>
-          </Link>
+          <PostLink node={node} />
         ))}
       </section>
     </Layout>

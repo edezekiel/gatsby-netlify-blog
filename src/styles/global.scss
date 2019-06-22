@@ -61,7 +61,7 @@ main {
   width: 80vw;
   margin: 0 auto;
   background-color: rgb(252, 250, 255);
-  padding: 15vh 5vw 15vh 5vw;
+  padding: 16vh 5vw 15vh 5vw;
 }
 
 a {
@@ -69,43 +69,8 @@ a {
   color: black;
 }
 
-// FOOTER
+// PostLink
 //----------------------------------------------------------------------
-footer {
-  height: 30vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  justify-items: center;
-  background-color: rgb(252, 250, 255);
-  a {
-    color: rgb(100, 58, 184);
-  }
-}
-
-// ARTICLE
-//----------------------------------------------------------------------
-article {
-  background-color: rgb(252, 250, 255);
-}
-
-.postShowPage {
-  padding: 0 5vw 5vh 5vw;
-}
-
-.postShowPageTitle {
-  text-align: center;
-}
-// FLEX
-//----------------------------------------------------------------------
-.pageContainer {
-  display: flex;
-  flex-direction: column;
-  h1 {
-    margin-top: 4vh;
-    margin-bottom: 2vh
-  }
-}
 
 .blogTags {
   margin-bottom: 2vh;
@@ -127,6 +92,41 @@ article {
 .postLinkDate {
   display: inline-block;
   font-size: .8rem;
+}
+
+// ARTICLE
+//----------------------------------------------------------------------
+article {
+  background-color: rgb(252, 250, 255);
+}
+
+.postShowPage {
+  padding: 0 5vw 5vh 5vw;
+}
+
+.postShowPageTitle {
+  text-align: center;
+}
+
+// FLEX
+//----------------------------------------------------------------------
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+// FOOTER
+//----------------------------------------------------------------------
+footer {
+  height: 30vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  background-color: rgb(252, 250, 255);
+  a {
+    color: rgb(100, 58, 184);
+  }
 }
 
 // BUTTON
