@@ -10,29 +10,40 @@ function IndexPage(props) {
   return (
     <Layout>
       <SEO title="Blog" />
-      <h1>Blog</h1>
-      <h2>Filter Posts: {currentTag === null ? "All" : `${currentTag}`}</h2>
-      <section className="pageContainer" />
-      <button onClick={() => setCurrentTag(null)}>Reset Filter</button>
-      {props.data.allMarkdownRemark.group.map(tag => (
-        <button
-          key={tag.fieldValue}
-          value={tag.fieldValue}
-          onClick={() => setCurrentTag(tag.fieldValue)}
-          id="flex-item"
-        >
-          {tag.fieldValue}
-        </button>
-      ))}
-      <section />
+      <div className="pageContainer">
+        <h1>Posts: {currentTag === null ? "All" : `${currentTag}`}</h1>
+        <section className="blogTags">
+          <button onClick={() => setCurrentTag(null)}>All</button>
+          {props.data.allMarkdownRemark.group.map(tag => (
+            <button
+              key={tag.fieldValue}
+              value={tag.fieldValue}
+              onClick={() => setCurrentTag(tag.fieldValue)}
+              id="flex-item"
+            >
+              {tag.fieldValue}
+            </button>
+          ))}
+        </section>
 
-      <section>
-        {props.data.allMarkdownRemark.edges.map(({ node }, i) => {
-          if (!(currentTag === null)) {
-            if (node.frontmatter.tags.includes(currentTag)) {
+        <section>
+          {props.data.allMarkdownRemark.edges.map(({ node }, i) => {
+            if (!(currentTag === null)) {
+              if (node.frontmatter.tags.includes(currentTag)) {
+                return (
+                  <Link to={node.fields.slug} slug={node.fields.slug}>
+                    <h3 className="post-index" key={i}>
+                      {node.frontmatter.title}
+                    </h3>
+                    <p>{node.frontmatter.date}</p>
+                    <p>{node.excerpt}</p>
+                  </Link>
+                )
+              }
+            } else {
               return (
-                <Link to={node.fields.slug} slug={node.fields.slug}>
-                  <h3 className="post-index" key={i}>
+                <Link to={node.fields.slug}>
+                  <h3 className="post-index" key={node.id}>
                     {node.frontmatter.title}
                   </h3>
                   <p>{node.frontmatter.date}</p>
@@ -40,19 +51,9 @@ function IndexPage(props) {
                 </Link>
               )
             }
-          } else {
-            return (
-              <Link to={node.fields.slug}>
-                <h3 className="post-index" key={node.id}>
-                  {node.frontmatter.title}
-                </h3>
-                <p>{node.frontmatter.date}</p>
-                <p>{node.excerpt}</p>
-              </Link>
-            )
-          }
-        })}
-      </section>
+          })}
+        </section>
+      </div>
     </Layout>
   )
 }
