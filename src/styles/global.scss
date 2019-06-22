@@ -87,10 +87,6 @@ hr {
   margin: 2vh 0 2vh 0;
 }
 
-.postLinks {
-
-}
-
 .postLink {
   padding: 5px 0 0 0;
   p {
@@ -106,7 +102,7 @@ hr {
 
 .postLinkDate {
   display: inline-block;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 // ARTICLE
@@ -183,10 +179,12 @@ button:hover {
   margin-bottom: 20px;
   padding: 10px;
   border-radius: 10px;
+
   h1,
   h2 {
     padding: 10px;
   }
+
   a {
     color: white;
     text-decoration: underline;
@@ -197,30 +195,41 @@ button:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 25px;
-}
 
-.projectCard {
-  border: solid black 1px;
-  border-radius: 10px;
-  height: 50vh;
-  display: grid;
-  grid-template-columns: 1fr;
-}
+  .projectCard {
+    border: solid black 1px;
+    border-radius: 10px;
+    height: 50vh;
+    display: grid;
+    border-top: 1px solid black;
+    grid-template-columns: 1fr;
 
-.projectCaption {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
+    img {
+      height: 38vh;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
 
-.projectCaption h3, p {
-  margin: 0;
-  padding: 10px;
-}
+    .projectCaption {
+      display: flex;
+      height: 12vh;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      border-top: 2px solid black;
 
-.projectCaption p {
-  text-align: center;
+      h3,
+      p {
+        margin: 5px 0 0 0;
+        padding: 0 5px 0 5px;
+        text-align: center;
+      }
+
+      h3 {
+        padding-top: 5px;
+      }
+    }
+  }
 }
 
 // GATSBY HIGHLIGHT
