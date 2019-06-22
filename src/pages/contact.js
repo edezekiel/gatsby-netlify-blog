@@ -3,10 +3,10 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-function AboutPage(props) {
+function ContactPage(props) {
   return (
     <Layout>
-      <SEO title="About" />
+      <SEO title="Contact" />
       <article>
         <h2>About Me</h2>
         <p>
@@ -49,4 +49,4 @@ function AboutPage(props) {
   )
 }
 
-export default AboutPage
+export default ContactPage
