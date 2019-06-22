@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import PostLink from "../components/postlink"
+import PostLink from "../components/PostLink"
 
 function IndexPage(props) {
   const [currentTag, setCurrentTag] = useState(null)
