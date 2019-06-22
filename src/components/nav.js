@@ -1,5 +1,5 @@
-import { Link } from "gatsby"
 import React from "react"
+import { Link } from "gatsby"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faUserAstronaut } from "@fortawesome/free-solid-svg-icons"
@@ -17,7 +17,7 @@ function Nav({ siteTitle }) {
         <h2>Projects</h2>
       </Link>
       <Link to="/about" id="nav-about">
-        <h2>About</h2>
+        <h2>Me</h2>
       </Link>
     </nav>
   )
