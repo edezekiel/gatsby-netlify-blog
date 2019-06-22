@@ -16,8 +16,8 @@ function Nav({ siteTitle }) {
       <Link to="/projects" id="nav-projects">
         <h2>Projects</h2>
       </Link>
-      <Link to="/about" id="nav-about">
-        <h2>Me</h2>
+      <Link to="/contact" id="nav-contact">
+        <h2>Contact</h2>
       </Link>
     </nav>
   )

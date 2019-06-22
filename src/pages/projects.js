@@ -39,7 +39,7 @@ function ProjectsPage(props) {
       <section className="projectHeader">
         <h1>My Recent Work</h1>
         <h2>
-          Here are a few recent design projects. Want to see more?{" "}
+          Here are a few of my recent web projects. Want to see more?{" "}
           <a href="mailto:ed.a.ezekiel@gmail.com">Email me</a>.
         </h2>
       </section>
@@ -47,22 +47,36 @@ function ProjectsPage(props) {
         <Link to="#" className="projectCard">
           <Img fluid={data.firstProjectImage.childImageSharp.fluid} />
           <div className="projectCaption">
-            <h3>First Project</h3>
-            <p>Description goes here</p>
+            <h3>YouTube Academy</h3>
+            <p>Take YouTube instructional videos to the next level. Save and share notes.</p>
           </div>
         </Link>
         <Link to="#" className="projectCard">
           <Img fluid={data.secondProjectImage.childImageSharp.fluid} />
           <div className="projectCaption">
-            <h3>Second Project</h3>
-            <p>Description goes here</p>
+            <h3>FireThrone</h3>
+            <p>Test your Game of Thrones knowledge with this serverless React game.</p>
+          </div>
+        </Link>
+        <Link to="#" className="projectCard">
+          <Img fluid={data.secondProjectImage.childImageSharp.fluid} />
+          <div className="projectCaption">
+            <h3>BlockSaver</h3>
+            <p>Geotag and report pedestrian safety issues using the blockchain.</p>
+          </div>
+        </Link>
+        <Link to="#" className="projectCard">
+          <Img fluid={data.secondProjectImage.childImageSharp.fluid} />
+          <div className="projectCaption">
+            <h3>DailyGif</h3>
+            <p>A fun app to upload gifs and scroll through a responsive feed.</p>
           </div>
         </Link>
         <Link to="#" className="projectCard">
           <Img fluid={data.thirdProjectImage.childImageSharp.fluid} />
           <div className="projectCaption">
-            <h3>Third Project</h3>
-            <p>Description goes here</p>
+            <h3>Kaizoku</h3>
+            <p>Command Line Interface to easily find the best ruby gem for the task.</p>
           </div>
         </Link>
       </section>
