@@ -1,8 +1,9 @@
 import React, { useState } from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import PostLink from "../components/postlink"
 
 function IndexPage(props) {
   const [currentTag, setCurrentTag] = useState(null)
@@ -30,26 +31,10 @@ function IndexPage(props) {
           {props.data.allMarkdownRemark.edges.map(({ node }, i) => {
             if (!(currentTag === null)) {
               if (node.frontmatter.tags.includes(currentTag)) {
-                return (
-                  <Link to={node.fields.slug} slug={node.fields.slug}>
-                    <h3 className="post-index" key={i}>
-                      {node.frontmatter.title}
-                    </h3>
-                    <p>{node.frontmatter.date}</p>
-                    <p>{node.excerpt}</p>
-                  </Link>
-                )
+                return <PostLink node={node} key={i} />
               }
             } else {
-              return (
-                <Link to={node.fields.slug}>
-                  <h3 className="post-index" key={node.id}>
-                    {node.frontmatter.title}
-                  </h3>
-                  <p>{node.frontmatter.date}</p>
-                  <p>{node.excerpt}</p>
-                </Link>
-              )
+              return <PostLink node={node} key={i} />
             }
           })}
         </section>

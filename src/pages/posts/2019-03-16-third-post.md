@@ -5,7 +5,6 @@ tags: ['JAMStack']
 hero: ../../images/first.png
 ---
 
-##JavaScript Loops Using for...of and for...in.
 Earlier this week I was working on a coding problem that involved looping through characters in strings. I wanted to loop over all the characters in two strings to determine whether they were anagrams. This kind of task is common in technical interview situations.
 
 This made me take a closer look at Javascript for loops. I was especially interested in the for...of and for...in loops, so I wrote this post to share what I found out.

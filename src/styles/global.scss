@@ -111,6 +111,24 @@ article {
   margin-bottom: 2vh;
 }
 
+.postLink {
+  padding: 10px;
+  p {
+    margin: 0;
+    padding: 0;
+    padding: 0 0 0 5px;
+  }
+  h3 {
+    margin: 0;
+    padding-bottom: 5px;
+  }
+}
+
+.postLinkDate {
+  display: inline-block;
+  font-size: .8rem;
+}
+
 // BUTTON
 //----------------------------------------------------------------------
 button {
