@@ -162,37 +162,22 @@ button:hover {
 .projectCard {
   border: solid black 1px;
   border-radius: 10px;
-  height: 40vh;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.projectCaption {
   display: flex;
   flex-direction: column;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   align-items: center;
-  justify-content: center;
+  width: 100%;
 }
 
-.projectImage {
-  transition: opacity .5s ease;
+.projectCaption h3, p {
+  margin: 0;
+  padding: 10px;
 }
-
-.overlay {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  position: absolute;
-  opacity: 0;
-  transition: opacity .5s ease;
-}
-
-.projectCard:hover .overlay {
-  opacity: 1;
-}
-.projectCard:hover .projectImage {
-  opacity: 0;
-}
-
 
 // GATSBY HIGHLIGHT
 //----------------------------------------------------------------------
@@ -239,7 +224,7 @@ button:hover {
 
 @media (max-width: 480px) {
   header {
-    position: fixed;
+    // position: fixed;
     bottom: 0px;
     background-color: #6b37bf;
     nav {

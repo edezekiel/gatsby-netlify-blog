@@ -43,23 +43,23 @@ function ProjectsPage(props) {
         </h2>
       </section>
       <section className="projectsContainer">
-        <a href={"#"}>
-          <div>
-            <Img fluid={data.firstProjectImage.childImageSharp.fluid} />
+        <a href={"#"} className={"projectCard"}>
+          <Img fluid={data.firstProjectImage.childImageSharp.fluid} />
+          <div className={"projectCaption"}>
             <h3>First Project</h3>
             <p>Description goes here</p>
           </div>
         </a>
-        <a href={"#"}>
-          <div>
-            <Img fluid={data.secondProjectImage.childImageSharp.fluid} />
+        <a href={"#"} className={"projectCard"}>
+          <Img fluid={data.secondProjectImage.childImageSharp.fluid} />
+          <div className={"projectCaption"}>
             <h3>Second Project</h3>
             <p>Description goes here</p>
           </div>
         </a>
-        <a href={"#"}>
-          <div>
-            <Img fluid={data.thirdProjectImage.childImageSharp.fluid} />
+        <a href={"#"} className={"projectCard"}>
+          <Img fluid={data.thirdProjectImage.childImageSharp.fluid} />
+          <div className={"projectCaption"}>
             <h3>Third Project</h3>
             <p>Description goes here</p>
           </div>
