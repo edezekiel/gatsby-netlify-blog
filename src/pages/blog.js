@@ -12,7 +12,7 @@ function IndexPage(props) {
     <Layout>
       <SEO title="Blog" />
       <h1>Posts: {currentTag === null ? "All" : `${currentTag}`}</h1>
-      <section className="blogTags">
+      <section className="postTags">
         <button onClick={() => setCurrentTag(null)}>All</button>
         {props.data.allMarkdownRemark.group.map(tag => (
           <button
@@ -26,7 +26,7 @@ function IndexPage(props) {
         ))}
       </section>
 
-      <section>
+      <section className="postLink">
         {props.data.allMarkdownRemark.edges.map(({ node }, i) => {
           if (!(currentTag === null)) {
             if (node.frontmatter.tags.includes(currentTag)) {

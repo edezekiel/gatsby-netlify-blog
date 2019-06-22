@@ -16,8 +16,8 @@ function IndexPage({ data }) {
         law, I discovered web development through working at a legal tech startup.
       </p>
 
-      <section id="latest-posts">
-        <h2>Latest Blog Posts:</h2>
+      <section className="latestPosts">
+        <h2>Latest Posts</h2>
         {data.allMarkdownRemark.edges.slice(0, 5).map(({ node }, i) => (
           <PostLink node={node} />
         ))}

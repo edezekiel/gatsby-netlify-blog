@@ -69,19 +69,34 @@ a {
   color: black;
 }
 
-// PostLink
+hr {
+  border: 0.5px solid #6b37bf;
+}
+
+// PostLinks and Tags
 //----------------------------------------------------------------------
 
-.blogTags {
-  margin-bottom: 2vh;
+.latestPosts {
+  margin-top: 5vh;
+  h2 {
+    margin-bottom: 2vh;
+  }
+}
+
+.postTags {
+  margin: 2vh 0 2vh 0;
+}
+
+.postLinks {
+
 }
 
 .postLink {
-  padding: 10px;
+  padding: 5px 0 0 0;
   p {
     margin: 0;
     padding: 0;
-    padding: 0 0 0 5px;
+    padding: 0 0 5px 5px;
   }
   h3 {
     margin: 0;
@@ -139,7 +154,7 @@ button {
   font-weight: bold;
   box-shadow: none;
   outline: none;
-  margin: 5px;
+  margin: 0 10px 0 0;
   border-radius: 10px;
   a {
     color: white;

@@ -11,6 +11,7 @@ function PostLink(props) {
         </h3>
         <p>{props.node.excerpt}</p>
       </Link>
+      <hr />
     </div>
   )
 }
