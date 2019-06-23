@@ -11,31 +11,33 @@ function IndexPage(props) {
   return (
     <Layout>
       <SEO title="Blog" />
-      <h1>Posts: {currentTag === null ? "All" : `${currentTag}`}</h1>
-      <section className="postTags">
-        <button onClick={() => setCurrentTag(null)}>All</button>
-        {props.data.allMarkdownRemark.group.map(tag => (
-          <button
-            key={tag.fieldValue}
-            value={tag.fieldValue}
-            onClick={() => setCurrentTag(tag.fieldValue)}
-            id="flex-item"
-          >
-            {tag.fieldValue}
-          </button>
-        ))}
-      </section>
+      <section className="skinny">
+        <h1>Posts: {currentTag === null ? "All" : `${currentTag}`}</h1>
+        <section className="postTags">
+          <button onClick={() => setCurrentTag(null)}>All</button>
+          {props.data.allMarkdownRemark.group.map(tag => (
+            <button
+              key={tag.fieldValue}
+              value={tag.fieldValue}
+              onClick={() => setCurrentTag(tag.fieldValue)}
+              id="flex-item"
+            >
+              {tag.fieldValue}
+            </button>
+          ))}
+        </section>
 
-      <section>
-        {props.data.allMarkdownRemark.edges.map(({ node }, i) => {
-          if (!(currentTag === null)) {
-            if (node.frontmatter.tags.includes(currentTag)) {
+        <section>
+          {props.data.allMarkdownRemark.edges.map(({ node }, i) => {
+            if (!(currentTag === null)) {
+              if (node.frontmatter.tags.includes(currentTag)) {
+                return <PostLink node={node} key={i} />
+              }
+            } else {
               return <PostLink node={node} key={i} />
             }
-          } else {
-            return <PostLink node={node} key={i} />
-          }
-        })}
+          })}
+        </section>
       </section>
     </Layout>
   )
@@ -56,7 +58,6 @@ export const query = graphql`
           fields {
             slug
           }
-          excerpt
         }
       }
       group(field: frontmatter___tags) {

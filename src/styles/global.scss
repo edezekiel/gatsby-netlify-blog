@@ -11,6 +11,7 @@ p {
 h1 {
   padding: 2vh 0 2vh 0;
   margin: 0;
+  font-size: 2rem;
 }
 
 // HTML
@@ -79,19 +80,52 @@ a {
   color: black;
 }
 
-hr {
-  border: 0.5px solid #6b37bf;
+// Skinny Container
+//----------------------------------------------------------------------
+
+.skinny {
+  width: 50vw;
+  margin: 0 auto;
 }
 
+// Hero Banner & Emojis
+//----------------------------------------------------------------------
+
+.heroBanner {
+  display: flex;
+  height: 70vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    margin-top: 5vh;
+    font-weight: normal;
+    text-align: center;
+  }
+  .emoji {
+    font-size: 2.5rem;
+  }
+}
+
+.emoji {
+  font-size: 1.5rem;
+}
 
 // PostLinks and Tags
 //----------------------------------------------------------------------
 
 .latestPosts {
-  margin-top: 5vh;
-  h2 {
-    margin-bottom: 2vh;
-  }
+  margin-top: 8vh;
+}
+
+.postLinks {
+  padding: 5vh 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 .postTags {
@@ -99,21 +133,20 @@ hr {
 }
 
 .postLink {
-  padding: 5px 0 0 0;
-  p {
-    margin: 0;
-    padding: 0;
-    padding: 0 0 5px 5px;
-  }
+  padding: 2.5vh 0 2.5vh 0;
+  border-bottom: 1px solid #6b37bf;
   h3 {
     margin: 0;
     padding-bottom: 5px;
   }
 }
 
+.postLink:hover {
+  background: rgb(242, 242, 242);
+}
+
 .postLinkDate {
-  display: inline-block;
-  font-size: 0.8rem;
+  margin-top: 1vh;
 }
 
 // ARTICLE
@@ -122,7 +155,6 @@ article {
   background-color: rgb(252, 250, 255);
   margin: 0;
   text-align: justify;
-  padding: 0 5vw 0 5vw;
   p, h1, h2, table, ul {
     padding: 2vh 0 0 0;
   }
@@ -149,6 +181,7 @@ footer {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-items: center;
+  border-top: 1px solid #6b37bf;
   background-color: rgb(252, 250, 255);
   a {
     color: rgb(100, 58, 184);

@@ -9,18 +9,23 @@ function IndexPage({ data }) {
   return (
     <Layout>
       <SEO title="Home" />
-      <h1>Hi, I'm Ed Ezekiel</h1>
-        <p className="headingCaption">
-          I'm a full stack web developer with a passion for solving problems.
-          With experience in JavaScript, React, and Ruby on Rails and a
-          background in law, I discovered web development through working at a
-          legal tech startup.
-        </p>
-      <section className="latestPosts">
-        <h2>Latest Posts</h2>
-        {data.allMarkdownRemark.edges.slice(0, 5).map(({ node }, i) => (
-          <PostLink node={node} />
-        ))}
+      <section className="skinny">
+        <section className="heroBanner">
+          <h1>Hi, I'm Ed.</h1>
+          <h2 className="headingCaption">
+            Welcome to my corner of the internet.{" "}
+            <span className="emoji">🚀</span>
+          </h2>
+        </section>
+
+        <section className="latestPosts">
+          <h2>Latest Posts</h2>
+          <div className="postLinks">
+            {data.allMarkdownRemark.edges.slice(0, 5).map(({ node }, i) => (
+              <PostLink node={node} />
+            ))}
+          </div>
+        </section>
       </section>
     </Layout>
   )
@@ -40,7 +45,6 @@ export const query = graphql`
           fields {
             slug
           }
-          excerpt
         }
       }
     }

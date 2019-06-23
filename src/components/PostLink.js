@@ -5,13 +5,9 @@ function PostLink(props) {
   return (
     <div className="postLink">
       <Link to={props.node.fields.slug}>
-        <h3>
-          {props.node.frontmatter.title}{" "}
-          <span className="postLinkDate"> - {props.node.frontmatter.date}</span>
-        </h3>
-        <p>{props.node.excerpt}</p>
+        <h3>{props.node.frontmatter.title} </h3>
+        <div className="postLinkDate">{props.node.frontmatter.date}</div>
       </Link>
-      <hr />
     </div>
   )
 }
