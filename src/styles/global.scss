@@ -17,7 +17,7 @@ h1 {
 // HTML
 //----------------------------------------------------------------------
 html {
-  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
 }
 
@@ -153,8 +153,11 @@ a {
 //----------------------------------------------------------------------
 article {
   background-color: rgb(252, 250, 255);
-  margin: 0;
+  margin: 0 auto;
+  width: 50vw;
   text-align: justify;
+  line-height: 2rem;
+  font-size: 1.3rem;
   p, h1, h2, table, ul {
     padding: 2vh 0 0 0;
   }
