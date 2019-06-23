@@ -9,23 +9,21 @@ function IndexPage({ data }) {
   return (
     <Layout>
       <SEO title="Home" />
-      <section className="skinny">
-        <section className="heroBanner">
-          <h1>Hi, I'm Ed.</h1>
-          <h2 className="headingCaption">
-            Welcome to my corner of the internet.{" "}
-            <span className="emoji">🚀</span>
-          </h2>
-        </section>
+      <section className="heroBanner">
+        <h1>Hi, I'm Ed.</h1>
+        <h2 className="headingCaption">
+          Welcome to my corner of the internet.{" "}
+          <span className="emoji">🚀</span>
+        </h2>
+      </section>
 
-        <section className="latestPosts">
-          <h2>Latest Posts</h2>
-          <div className="postLinks">
-            {data.allMarkdownRemark.edges.slice(0, 5).map(({ node }, i) => (
-              <PostLink node={node} />
-            ))}
-          </div>
-        </section>
+      <section className="latestPosts">
+        <h2>Latest Posts</h2>
+        <div className="postLinks">
+          {data.allMarkdownRemark.edges.slice(0, 5).map(({ node }, i) => (
+            <PostLink node={node} />
+          ))}
+        </div>
       </section>
     </Layout>
   )
