@@ -12,7 +12,7 @@ function IndexPage({ data }) {
       <section className="heroBanner">
         <h1>Hi, I'm Ed</h1>
         <h2 className="headingCaption">
-          I'm a web developer obsessed with crafting eloquent code.{" "}
+          I'm a full-stack software developer with a passion for solving problems.{" "}
         </h2>
       </section>
 
