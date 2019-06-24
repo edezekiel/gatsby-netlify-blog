@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Helmet from "react-helmet"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -9,6 +10,13 @@ function IndexPage({ data }) {
   return (
     <Layout>
       <SEO title="Home" />
+      <Helmet>
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
+      </Helmet>
       <section className="heroBanner">
         <h1>Hi, I'm Ed</h1>
         <h2 className="headingCaption">
@@ -19,12 +27,11 @@ function IndexPage({ data }) {
 
       <section>
         <a
-          href="https://twitter.com/EdwardAEzekiel"
+          href="https://twitter.com/EdwardAEzekiel?ref_src=twsrc%5Etfw"
+          class="twitter-follow-button"
           data-size="large"
-          className="twitter-follow-button"
-          data-show-count="false"
+          data-show-screen-name="false"
         >
-          Follow
         </a>
       </section>
       <section className="latestPosts">
