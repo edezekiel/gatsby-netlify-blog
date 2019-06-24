@@ -8,12 +8,16 @@ import PostLink from "../components/PostLink"
 function IndexPage(props) {
   const [currentTag, setCurrentTag] = useState(null)
 
-  useEffect(() => {
-  }, [currentTag])
+  useEffect(() => {}, [currentTag])
 
   return (
     <Layout>
       <SEO title="Blog" />
+      <h2 className="blogIntro">
+        This blog is about programming, web development, and my journey from
+        practicing law to loving code.
+      </h2>
+
       <h1>Posts: {currentTag === null ? "All" : `${currentTag}`}</h1>
       <section className="postTags">
         <button onClick={() => setCurrentTag(null)}>All</button>
