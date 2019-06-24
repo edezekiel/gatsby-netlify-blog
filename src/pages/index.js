@@ -11,9 +11,14 @@ function IndexPage({ data }) {
       <SEO title="Home" />
       <section className="heroBanner">
         <h1>Hi, I'm Ed.</h1>
-        <h2 className="headingCaption">
-          Welcome to my corner of the internet.{" "}
-          <span className="emoji" role="img" aria-label="emoji">🚀</span>
+        <h2 className="heroCaption">
+          This site is about{" "}
+          <a href="/blog">sharing ideas</a>
+          ,{" "}
+          <a href="/projects">open source work</a>
+          , and{" "}
+          <a href="/contact">building relationships</a>
+          .
         </h2>
       </section>
 
@@ -25,6 +30,38 @@ function IndexPage({ data }) {
           ))}
         </div>
       </section>
+
+      <article className="aboutMe">
+        <h2>About Me</h2>
+
+        <p>
+          I grew up in Maryland and I live in Memphis, TN. When I'm not
+          programming, I'm probably cheering on the Memphis Grizzlies with my
+          wife Farley, or playing with my dogs Buddy and Grace.
+        </p>
+
+        <p>
+          My passion for coding began when I was working at UnitedLex. I managed
+          document review projects involving millions of files. In order to
+          streamline my workflow, I picked up computer skills like performing
+          advanced database queries, writing excel programs, and creating
+          virtual workspaces.
+        </p>
+
+        <p>
+          I discovered macros, Visual Basic, and keyboard shortcuts that seemed
+          like magic. Excel programming and querying was fun, but I became
+          curious about the broader field of programming. Over the next two
+          years I took more online lessons, learned bits about computer science,
+          and started looking into bootcamps.
+        </p>
+
+        <p>
+          In 2018, I ran into Flatiron's free online Coding Bootcamp Prep
+          Course. I decided to follow my passion and I have been completely
+          hooked on web development ever since.
+        </p>
+      </article>
     </Layout>
   )
 }
