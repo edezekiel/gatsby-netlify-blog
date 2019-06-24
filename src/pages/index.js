@@ -12,10 +12,21 @@ function IndexPage({ data }) {
       <section className="heroBanner">
         <h1>Hi, I'm Ed</h1>
         <h2 className="headingCaption">
-          I'm a full-stack software developer with a passion for solving problems.{" "}
+          I'm a full-stack software developer with a passion for solving
+          problems.{" "}
         </h2>
       </section>
 
+      <section>
+        <a
+          href="https://twitter.com/EdwardAEzekiel"
+          data-size="large"
+          className="twitter-follow-button"
+          data-show-count="false"
+        >
+          Follow
+        </a>
+      </section>
       <section className="latestPosts">
         <h2>Latest Posts</h2>
         <div className="postLinks">
@@ -28,8 +39,10 @@ function IndexPage({ data }) {
       <article className="aboutMe">
         <h2>About Me</h2>
 
-        <p>I live in Memphis, TN with my wife, daughter, and two dogs. I work
-        at web3devs as a full-stack software developer.</p>
+        <p>
+          I live in Memphis, TN with my wife, daughter, and two dogs. I work at
+          web3devs as a full-stack software developer.
+        </p>
 
         <p>
           My passion for coding began at a legal tech company. I started working
@@ -38,11 +51,10 @@ function IndexPage({ data }) {
 
         <p>
           In 2018 I enrolled in Flatiron's immersive software engineering
-          bootcamp. It was an incredible experience. I learned JavaScript, React,
-          Redux, Ruby, and Rails. I also got my first taste of peer programming
-          and agile software development.
+          bootcamp. It was an incredible experience. I learned JavaScript,
+          React, Redux, Ruby, and Rails. I also got my first taste of peer
+          programming and agile software development.
         </p>
-
       </article>
     </Layout>
   )
