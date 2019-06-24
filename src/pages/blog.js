@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
@@ -7,6 +7,9 @@ import PostLink from "../components/PostLink"
 
 function IndexPage(props) {
   const [currentTag, setCurrentTag] = useState(null)
+
+  useEffect(() => {
+  }, [currentTag])
 
   return (
     <Layout>
@@ -19,14 +22,13 @@ function IndexPage(props) {
             key={tag.fieldValue}
             value={tag.fieldValue}
             onClick={() => setCurrentTag(tag.fieldValue)}
-            id="flex-item"
           >
             {tag.fieldValue}
           </button>
         ))}
       </section>
 
-      <section>
+      <section className="postLinks">
         {props.data.allMarkdownRemark.edges.map(({ node }, i) => {
           if (!(currentTag === null)) {
             if (node.frontmatter.tags.includes(currentTag)) {

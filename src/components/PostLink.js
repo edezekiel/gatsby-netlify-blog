@@ -1,14 +1,11 @@
 import React from "react"
-import { Link } from "gatsby"
 
 function PostLink(props) {
   return (
-    <div className="postLink">
-      <Link to={props.node.fields.slug}>
-        <h3>{props.node.frontmatter.title} </h3>
-        <div className="postLinkDate">{props.node.frontmatter.date}</div>
-      </Link>
-    </div>
+    <a href={props.node.fields.slug} className="postLink">
+      <h3>{props.node.frontmatter.title} </h3>
+      <div className="postLinkDate">{props.node.frontmatter.date}</div>
+    </a>
   )
 }
 

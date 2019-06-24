@@ -59,7 +59,7 @@ function ProjectsPage(props) {
       <SEO title="Projects" />
       <section className="projectHeader">
         <h2>Here are a few of my recent web projects.</h2>
-        <h2>Want to see more?{" "}<Link to="/contact"><span className="emoji">📬</span></Link></h2>
+        <h2>Want to see more?{" "}<Link to="/contact"><span className="emoji" role="img" aria-label="emoji">📬</span></Link></h2>
       </section>
       <section className="projectsContainer">
         <a href="https://youtube-academy.netlify.com" target="blank" className="projectCard">

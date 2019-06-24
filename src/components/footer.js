@@ -4,7 +4,7 @@ function Footer(props) {
   return (
     <footer>
       <section>
-        <h2>Made with{" "}<span className="emoji">💜</span>{" "}by Ed Ezekiel</h2>
+        <h2>Made with{" "}<span className="emoji" role="img" aria-label="emoji">❤️</span>{" "}by Ed Ezekiel</h2>
       </section>
       <section>
         <h2>
