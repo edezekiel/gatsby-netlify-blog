@@ -15,6 +15,27 @@ function ContactPage(props) {
           }
         }
       }
+      linkedInIcon: file(relativePath: { eq: "linkedInIcon.png" }) {
+        childImageSharp {
+          fixed(width: 50, height: 50) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      githubIcon: file(relativePath: { eq: "githubIcon.png" }) {
+        childImageSharp {
+          fixed(width: 50, height: 50) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      emailIcon: file(relativePath: { eq: "emailIcon.png" }) {
+        childImageSharp {
+          fixed(width: 50, height: 50) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
     }
   `)
 
@@ -23,12 +44,24 @@ function ContactPage(props) {
       <SEO title="Contact" />
       <h1>Contact</h1>
 
-      <Img fadeIn={true} fixed={data.twitterIcon.childImageSharp.fixed} />
+      <section className="subscribe">
+        Subscribe
+      </section>
 
-      <a href="#">Twitter</a>
-      <a href="#">Github</a>
-      <a href="#">LinkedIn</a>
-      <a href="#">Email</a>
+      <section className="contactIcons">
+        <a href="https://twitter.com/EdwardAEzekiel">
+          <Img fadeIn={true} fixed={data.twitterIcon.childImageSharp.fixed} />
+        </a>
+        <a href="https://github.com/edezekiel">
+          <Img fadeIn={true} fixed={data.githubIcon.childImageSharp.fixed} />
+        </a>
+        <a href="https://www.linkedin.com/in/edezekiel/">
+          <Img fadeIn={true} fixed={data.linkedInIcon.childImageSharp.fixed} />
+        </a>
+        <a href="mailto: ed.a.ezekiel@gmail.com">
+          <Img fadeIn={true} fixed={data.emailIcon.childImageSharp.fixed} />
+        </a>
+      </section>
     </Layout>
   )
 }
