@@ -203,7 +203,7 @@ footer {
   }
 }
 
-// BUTTON
+// BUTTONS
 //----------------------------------------------------------------------
 button {
   background-color: #6b37bf;
@@ -228,6 +228,17 @@ button:hover {
   color: #6b37bf;
   box-shadow: none;
   outline: none;
+}
+
+.social-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  div:first-of-type {
+    margin-right: 0.5rem;
+  }
 }
 
 // PROJECT

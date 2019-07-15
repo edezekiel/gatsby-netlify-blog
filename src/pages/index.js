@@ -6,6 +6,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PostLink from "../components/PostLink"
 
+import GitHubButton from "react-github-btn"
+
 function IndexPage({ data }) {
   return (
     <Layout>
@@ -25,14 +27,25 @@ function IndexPage({ data }) {
         </h2>
       </section>
 
-      <section>
-        <a
-          href="https://twitter.com/EdwardAEzekiel?ref_src=twsrc%5Etfw"
-          class="twitter-follow-button"
-          data-size="large"
-          data-show-screen-name="false"
-        >
-        </a>
+      <section className="social-buttons">
+        <div>
+          <a
+            href="https://twitter.com/EdwardAEzekiel?ref_src=twsrc%5Etfw"
+            class="twitter-follow-button"
+            data-size="large"
+            data-show-screen-name="false"
+          ></a>
+        </div>
+        <div>
+          <GitHubButton
+            href="https://github.com/edezekiel"
+            data-size="large"
+            data-show-count="true"
+            aria-label="Follow @edezekiel on GitHub"
+          >
+            Follow
+          </GitHubButton>
+        </div>
       </section>
       <section className="latestPosts">
         <h2>Latest Posts</h2>
