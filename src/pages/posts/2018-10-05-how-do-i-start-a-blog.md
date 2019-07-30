@@ -2,7 +2,7 @@
 date: 2019-01-16
 title: 'How Do I Start a Blog?'
 tags: ['JavaScript']
-cover_image: ../../images/how-do-i-start-a-blog.jpg
+cover_image: ../../images/coverImages/how-do-i-start-a-blog.jpg
 ---
 
 Welcome to the inaugural post! For my first project, I will walk through how I set up this blog. There are four basic steps: (1) choose your web hosting service, (2) pick a domain name, (3) create an html file, and (4) upload the file.

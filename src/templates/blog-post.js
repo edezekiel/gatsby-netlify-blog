@@ -13,7 +13,7 @@ export default ({ data }) => {
       <h1 className="postShowPageTitle">{post.frontmatter.title}</h1>
       <Img
         className="postShowPageImage"
-        fluid={post.frontmatter.hero.childImageSharp.fluid}
+        fluid={post.frontmatter.cover_image.childImageSharp.fluid}
       />
       <article>
         <button>
