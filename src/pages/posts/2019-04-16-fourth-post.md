@@ -2,7 +2,7 @@
 date: 2019-04-16
 title: 'Looping Using ES6 Syntax (JavaScript)'
 tags: ['Ruby/Rails']
-hero: ../../images/first.png
+cover_image: ../../images/first.png
 ---
 
 Earlier this week I was working on a coding problem that involved looping through characters in strings. I wanted to loop over all the characters in two strings to determine whether they were anagrams. This kind of task is common in technical interview situations.

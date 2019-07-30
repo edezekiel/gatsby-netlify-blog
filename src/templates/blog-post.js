@@ -33,7 +33,7 @@ export const query = graphql`
       html
       frontmatter {
         title
-        hero {
+        cover_image {
           childImageSharp {
             fluid {
               ...GatsbyImageSharpFluid
