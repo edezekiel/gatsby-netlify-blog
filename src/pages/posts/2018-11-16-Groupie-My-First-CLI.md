@@ -19,12 +19,14 @@ Let's jump right in. [Here](https://asciinema.org/a/7rcvL0AnlFtJsblXxn797XWco) i
 
 As you may have noticed during the walkthrough, Groupie has several “menus” or “screens.” Different screens can be accessed at different times throughout the execution of the file. Each screen lets the user interact with some aspect of the CLI. For example, the “greeting screen” welcomes the user and provides basic instructions.
 
-    def greet_screen
-        welcome_user
-        list_first_concert
-        list_first_band
-        session_screen
-    end
+```ruby
+def greet_screen
+    welcome_user
+    list_first_concert
+    list_first_band
+    session_screen
+end
+```
 
 These are the different screens:
 
@@ -42,21 +44,25 @@ The trickiest part was getting the exit screen and the ticketing screens to work
 
 I stylized Groupie using the "pastel" gem. I also created a method called "separators" that was responsible for inserting line breaks between each screen.
 
-    def pastel
-        pastel = Pastel.new
-        pastel
-      end
-    def separator
-        puts "                                                      "
-        puts pastel.bright_magenta("==================================================")
-        puts "                                                      "
-      end
+```ruby
+def pastel
+    pastel = Pastel.new
+    pastel
+  end
+def separator
+    puts "                                                      "
+    puts pastel.bright_magenta("==================================================")
+    puts "                                                      "
+  end
+```
 
 **ActiveRecord**
 
 I used the ActiveRecord gem to streamline several aspects of the program. This gem helps with creating and updating databases, creating associations between classes, and inheriting all kinds of built-in methods. For example, the “Bands” class is associated with the “Sessions” and “Concerts” classes:
 
-    class Band < ActiveRecord::Base
-      has_many :sessions
-      has_many :concerts, through: :sessions
-    end
+```ruby
+class Band < ActiveRecord::Base
+  has_many :sessions
+  has_many :concerts, through: :sessions
+end
+```
