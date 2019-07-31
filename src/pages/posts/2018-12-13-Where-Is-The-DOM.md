@@ -2,7 +2,7 @@
 date: 2018-12-13
 title: "Where is the DOM?"
 published: false
-tags: ["webdev", "bootcamp"]
+tags: ["webdev", "bootcamp", "javascript"]
 canonical_url:
 cover_image: ../../images/coverImages/2018-12-13-cover-image.jpeg
 ---

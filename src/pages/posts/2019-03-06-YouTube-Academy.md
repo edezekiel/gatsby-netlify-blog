@@ -2,7 +2,7 @@
 date: 2019-03-06
 title: "My Capstone Full-Stack Web App: YouTube Academy"
 published: false
-tags: ["react", "ruby", "bootcamp", "showdev"]
+tags: ["react", "ruby", "bootcamp", "showdev", "javascript"]
 canonical_url:
 cover_image: ../../images/coverImages/2019-03-06-cover-image.jpeg
 ---
