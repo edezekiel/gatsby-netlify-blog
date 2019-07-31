@@ -1,6 +1,6 @@
 ---
 date: 2019-01-17
-title: 'Using Javascript\s "this" Keyword in React'
+title: 'Using Javascript "this" Keyword in React'
 published: false
 tags: ["javascript", "bootcamp", "webdev"]
 canonical_url:

@@ -20,8 +20,8 @@ function IndexPage(props) {
 
       <h1>Posts: {currentTag === null ? "All" : `${currentTag}`}</h1>
       <section className="postTags">
-        <button onClick={() => setCurrentTag(null)}>All</button>
-        {props.data.allMarkdownRemark.group.map(tag => (
+        <button onClick={() => setCurrentTag(null)}>all</button>
+        {props.data.allMarkdownRemark.group.sort((a, b) => b.totalCount - a.totalCount).map(tag => (
           <button
             key={tag.fieldValue}
             value={tag.fieldValue}

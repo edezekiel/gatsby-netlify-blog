@@ -60,7 +60,7 @@ function IndexPage({ data }) {
 
         <p>
           I live in Memphis, TN with my wife, daughter, and two dogs. I work at
-          web3devs as a full-stack software developer.
+          Ubiquisoft as a front-end software developer.
         </p>
 
         <p>
