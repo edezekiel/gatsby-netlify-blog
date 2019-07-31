@@ -115,14 +115,16 @@ a {
 //----------------------------------------------------------------------
 
 .contact-links {
-  margin: 20px 0 0 20px;
-  p {
-    margin-top: 10px;
-  }
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .contact-link {
   color: #6b37bf;
+  margin: 50px;
 }
 
 .contact-link:hover {
@@ -216,15 +218,9 @@ footer {
   align-items: center;
   justify-items: center;
   grid-template-areas:
-    "twitter github linkedin"
-    "copyright build icons";
+    "twitter github linkedin";
   a {
     color: rgb(100, 58, 184);
-  }
-  img {
-    margin: 0;
-    padding: 0;
-    color: white;
   }
   .icon-link {
     margin: 0;

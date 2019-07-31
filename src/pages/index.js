@@ -22,8 +22,7 @@ function IndexPage({ data }) {
       <section className="heroBanner">
         <h1>Hi, I'm Ed</h1>
         <h2 className="headingCaption">
-          I'm a full-stack software developer with a passion for solving
-          problems.{" "}
+          I'm a full-stack software developer with a beginner's mind.{" "}
         </h2>
       </section>
 
