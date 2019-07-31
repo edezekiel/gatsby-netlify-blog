@@ -40,13 +40,13 @@ function Footer(props) {
       <a className="icon-link" href="https://www.linkedin.com/in/edezekiel/">
         <Img fadeIn={true} fixed={data.linkedin.childImageSharp.fixed} />
       </a>
-      <p>©{new Date().getFullYear()} Edward Ezekiel.</p>
+      <p>©{new Date().getFullYear()} Edward Ezekiel</p>
       <p>
         Built with
         {` `}
         <a href="https://www.gatsbyjs.org">Gatsby</a> and
         {` `}
-        <a href="https://www.gatsbyjs.org">Netlify</a>.
+        <a href="https://www.gatsbyjs.org">Netlify</a>
       </p>
       <p>
         Icons by

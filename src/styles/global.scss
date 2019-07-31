@@ -211,9 +211,13 @@ article {
 footer {
   height: 30vh;
   border-top: 1px solid #6b37bf;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
+  justify-items: center;
+  grid-template-areas:
+    "twitter github linkedin"
+    "copyright build icons";
   a {
     color: rgb(100, 58, 184);
   }
