@@ -15,15 +15,17 @@ The past weeks have flown by. At Flatiron, we've moved from learning Ruby, to bu
 
 This article is about the my favorite "ah-ha" moment from this week: when I finally understood why we need to use an instance variable in `form_for`. Below is an example using `form_for` and `collection_select` to build a new employee form:
 
-    #app/view/new.html.erb
+```ruby
+#app/view/new.html.erb
 
-    <%= form_for @employee do | f | %>
-      <%= f.label :name %>
-      <%= f.text_field :name %>
-      <%= f.label :dog %>
-      <%= f.collection_select :dog_id, @dogs, :id, :name %>
-      <%= f.submit %>
-    <% end %>
+<%= form_for @employee do | f | %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :dog %>
+  <%= f.collection_select :dog_id, @dogs, :id, :name %>
+  <%= f.submit %>
+<% end %>
+```
 
 **What's Going on in This Example?**
 

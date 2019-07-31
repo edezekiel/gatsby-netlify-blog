@@ -35,15 +35,19 @@ In contrast, stellar smart contracts can only accomplish a limited set of tasks.
 
 1.  You didn't set the base fee:
 
-            const baseFee = await server.fetchBaseFee();
+```javascript
+const baseFee = await server.fetchBaseFee();
 
-            const transaction = new StellarSdk.TransactionBuilder(account, {
-            fee: baseFee })
+const transaction = new StellarSdk.TransactionBuilder(account, {
+fee: baseFee })
+```
 
 2.  You didn't load the account before building the transaction:
 
-            const account = await server.loadAccount(sourceKeys.publicKey());
-            const transaction = new StellarSdk.TransactionBuilder(account, { fee: baseFee })
+```javascript
+const account = await server.loadAccount(sourceKeys.publicKey());
+const transaction = new StellarSdk.TransactionBuilder(account, { fee: baseFee })
+```
 
 #### Why can't I submit the Unlock XDR to Horizon?
 
@@ -51,35 +55,39 @@ You may be trying to submit the XDR too early. The unlock XDR can only be submit
 
 The solution is signing the unlock transaction, and saving that transaction somewhere publicly. Only submit the unlock xdr to Horizon once the lock up period is over.
 
-        try {
-          // Save as an XDR string
-          const transactionXDR = transaction
-            .toEnvelope()
-            .toXDR()
-            .toString("base64");
-          console.log("FN: unlock", "Success! Results:", transactionXDR);
-          return transactionXDR;
+```javascript
+try {
+  // Save as an XDR string
+  const transactionXDR = transaction
+    .toEnvelope()
+    .toXDR()
+    .toString("base64");
+  console.log("FN: unlock", "Success! Results:"), transactionXDR);
+  return transactionXDR;
+```
 
 #### How do I set timebounds?
 
 It was not easy to figure out the syntax for setting timebounds. Here is what finally worked for me:
 
-        // The unlock date (D+T) is the first date that the unlock transaction can be
-        // submitted. If Transaction 3 (this transaction) is submitted before the
-        // unlock date, the transaction will not be valid.
+```javascript
+// The unlock date (D+T) is the first date that the unlock transaction can be
+// submitted. If Transaction 3 (this transaction) is submitted before the
+// unlock date, the transaction will not be valid.
 
-        const transaction = new StellarSdk.TransactionBuilder(escrowAccount, {
-          fee: baseFee,
-          timebounds: {
-            minTime: (
-              Math.floor(Date.now() / 1000) + parseInt(unlockTx.unlockDate)
-            ).toString(),
-            // The maximum time is set to 0, to denote that the transaction does not have
-            // an expiration date.
-            maxTime: (0).toString()
-          },
-          sequence: (parseInt(escrowAccount.sequence) + 1).toString()
-        })
+const transaction = new StellarSdk.TransactionBuilder(escrowAccount, {
+  fee: baseFee,
+  timebounds: {
+    minTime: (
+      Math.floor(Date.now() / 1000) + parseInt(unlockTx.unlockDate)
+    ).toString(),
+    // The maximum time is set to 0, to denote that the transaction does not have
+    // an expiration date.
+    maxTime: (0).toString()
+  },
+  sequence: (parseInt(escrowAccount.sequence) + 1).toString()
+})
+```
 
 ## 4. Instructions
 

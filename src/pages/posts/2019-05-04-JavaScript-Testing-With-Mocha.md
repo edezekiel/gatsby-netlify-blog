@@ -27,16 +27,18 @@ I decided to write a Mocha test that would be executed in the node JS environmen
 
 Here is the code:
 
-        // Require the built in 'assertion' library
-        var assert = require('assert');
+```javascript
+// Require the built in 'assertion' library
+var assert = require('assert');
 
-        describe('Compare', function() {
-          describe('Star Wars Quotes', function() {
-            it('should test whether two data types are equivalent ', function() {
-              assert.equal(true, typeof "May the Fourth Be With You" === typeof "Help me Obi Wan Kenobi, you're my only hope")
-            })
-          })
-        })
+describe('Compare', function() {
+  describe('Star Wars Quotes', function() {
+    it('should test whether two data types are equivalent ', function() {
+      assert.equal(true, typeof "May the Fourth Be With You" === typeof "Help me Obi Wan Kenobi, you're my only hope")
+    })
+  })
+})
+```
 
 This test passes, because both operands are strings, so function will return the expected output of true.
 

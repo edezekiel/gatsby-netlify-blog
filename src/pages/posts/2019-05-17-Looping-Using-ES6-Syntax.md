@@ -17,13 +17,21 @@ This made me take a closer look at Javascript for loops. I was especially intere
 
 So, what's a good way to accomplish this goal? One approach is to use a traditional for loop:
 
-> `for (let i = 0; i < string.length; i++) {console.log(string.charAt(i))}`
+```javascript
+for (let i = 0; i < string.length; i++) {
+  console.log(string.charAt(i))
+}
+```
 
 This kind of for loop has been around in Javascript since its inception twenty years ago. However, ES6 introduced some spiffy new syntax.
 
 Since the introduction of ES6, you can use a `for...of` loop:
 
-> `for (character of string) {console.log(character)}`
+```javascript
+for (character of string) {
+  console.log(character)
+}
+```
 
 Isn't the `for...of` statement much easier to read than the traditional for loop! It also requires less typing, which means less room for error.
 
@@ -65,12 +73,13 @@ Once again MDN has a great example demonstrating how to use this method to check
 
 Let's take a look back at our example to confirm whether `for...of` and/or `for...in` works:
 
-> `let myString = "valar morghulis"
->
-> "hello world"[Symbol.iterator]()  
-> // StringIterator {}
->
-> console.log(myString.propertyIsEnumerable([1]))  
-> // true`
+```javascript
+let myString = "valar morghulis"
 
+"hello world"[Symbol.iterator]()  
+// StringIterator {}
+
+console.log(myString.propertyIsEnumerable([1]))  
+// true
+```
 As demonstrated above, strings have the Symbol.iterator method. In addition, strings are indexed by character. Thus, you can use `for...of` or a `for...in` statement to iterate over characters in a string.

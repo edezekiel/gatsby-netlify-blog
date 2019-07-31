@@ -29,10 +29,12 @@ The trickiest part for me was pushing the gem to RubyGems.org. I kept on getting
 
 Nokogiri is Ruby gem that fetches and parses HTML documents (a web scraper). Kaizoku uses Nokogiri to scrape ruby-toolbox.com. Here an example of the code used to return a list of categorized gems:
 
-       def get_category
-         doc = Nokogiri::HTML(open("https://www.ruby-toolbox.com"))
-         doc.css(".category-group").each do |category|
-           puts category.css("h3").text
-         end
-         get_subcategory_screen
-       end
+```ruby
+ def get_category
+   doc = Nokogiri::HTML(open("https://www.ruby-toolbox.com"))
+   doc.css(".category-group").each do |category|
+     puts category.css("h3").text
+   end
+   get_subcategory_screen
+ end
+```

@@ -21,14 +21,15 @@ To get started, it helps to know Pry’s `cd` method, `whereami`, and `ls`. Pry�
 
 On to the code - open up a pry session and cd into Pry itself:
 
-      [06:57:06] ~
-    // ♥ Pry
-    [1] pry(main)> whereami
-    At the top level.
-    [2] pry(main)> cd Pry
-    [3] pry(Pry):1> whereami
-    Inside Pry.
-    [4] pry(Pry):1>
+```ruby
+// ♥ Pry
+[1] pry(main)> whereami
+At the top level.
+[2] pry(main)> cd Pry
+[3] pry(Pry):1> whereami
+Inside Pry.
+[4] pry(Pry):1>
+```
 
 As you can see from the code above, you are now “inside Pry.” Pry is a program like any other and contains numerous files and Commands. Now,enter `ls` or `help` to get a display of all sorts of Pry commands. Enter `exit!` to back out of your current Pry session.
 
@@ -40,23 +41,24 @@ Pry’s Introspection methods like `show-docs` and `show-code` help you learn ba
 
 The Pry command `show-docs` (or `?` for short) does exactly what it says: it shows you any relevant documentation for the file you’re working with. This saves you from having to hunt down the docs online. For example, typing ? in Pry will bring up Pry’s docs:
 
-      [07:11:51] ~
-    // ♥ Pry
-    [1] pry(main)> cd Pry
-    [2] pry(Pry):1> ?
+```ruby
+// ♥ Pry
+[1] pry(main)> cd Pry
+[2] pry(Pry):1> ?
 
-    From: /Users/edwardezekiel/.rvm/gems/ruby-2.3.3/gems/pry-0.11.3/lib/pry/pry_instance.rb @ line 2:
-    Class name: Pry
-    Number of monkeypatches: 6\. Use the `-a` option to display all available monkeypatches
-    Number of lines: 22
+From: /Users/edwardezekiel/.rvm/gems/ruby-2.3.3/gems/pry-0.11.3/lib/pry/pry_instance.rb @ line 2:
+Class name: Pry
+Number of monkeypatches: 6\. Use the `-a` option to display all available monkeypatches
+Number of lines: 22
 
-     -*- coding: utf-8 -*-
-    #
-     Pry is a powerful alternative to the standard IRB shell for Ruby. It
-     features syntax highlighting, a flexible plugin architecture, runtime
-     invocation and source and documentation browsing.
+-*- coding: utf-8 -*-
+#
+Pry is a powerful alternative to the standard IRB shell for Ruby. It
+features syntax highlighting, a flexible plugin architecture, runtime
+invocation and source and documentation browsing.
+```
 
-**Show Sources - \$**
+**Show Sources**
 
 As explained on on the Pry [wiki:](https://github.com/pry/pry/wiki/Source-browsing)
 
@@ -64,20 +66,20 @@ As explained on on the Pry [wiki:](https://github.com/pry/pry/wiki/Source-browsi
 
 Here is an example:
 
-      [07:13:00] ~
-      // ♥ Pry
-      [1] pry(main)> cd Pry
-      [2] pry(Pry):1> $
+```ruby
+// ♥ Pry
+[1] pry(main)> cd Pry
+[2] pry(Pry):1> $
 
-      From: /Users/edwardezekiel/.rvm/gems/ruby-2.3.3/gems/pry-0.11.3/lib/pry/pry_instance.rb @ line 24:
-      Class name: Pry
-      Number of monkeypatches: 6\. Use the `-a` option to display all available monkeypatches
-      Number of lines: 643
+From: /Users/edwardezekiel/.rvm/gems/ruby-2.3.3/gems/pry-0.11.3/lib/pry/pry_instance.rb @ line 24:
+Class name: Pry
+Number of monkeypatches: 6\. Use the `-a` option to display all available monkeypatches
+Number of lines: 643
 
-      class Pry
-        attr_accessor :binding_stack
-        attr_accessor :custom_completions
-      ...
+class Pry
+attr_accessor :binding_stack
+attr_accessor :custom_completions
+```
 
 **Pry Stack Explorer**
 

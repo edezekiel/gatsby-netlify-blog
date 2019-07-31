@@ -17,12 +17,14 @@ This article walks through each line of a simple fetch example in an attempt to 
 
 Here is an example of a simple fetch request:
 
-      fetch(url)
-      .then((resp) => resp.json()) // Transform the data into json
-      .then(function(data) {
-        // Create and append the li's to the ul
-        })
-      })
+```javascript
+fetch(url)
+.then((resp) => resp.json()) // Transform the data into json
+.then(function(data) {
+  // Create and append the li's to the ul
+  })
+})
+```
 
 As discussed in the scotch.io tutorial, this example fetches data about "authors" from an API, and calls a function that adds those authors to the page.
 

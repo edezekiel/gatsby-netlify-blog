@@ -9,11 +9,7 @@ cover_image: ../../images/coverImages/2019-01-17-cover-image.jpeg
 
 In this post, I break down the keyword `this` and provide a quick example using React.
 
-###
-
-Why Should I Care About `this` in React?
-
-###
+### Why Should I Care About `this` in React?
 
 My Flatiron cohort is finally getting to use React js! React has a ton of features that simplify writing front-end Javascript code.
 
@@ -31,29 +27,33 @@ Check out my post [Where is the DOM?](http://edezekiel.com/blogs/12_13_2018.html
 
 Let's create a simple object and set some properties:
 
-    // create an empty object using the ES6 object initializer
-    let myObject = {}
+```javascript
+// create an empty object using the ES6 object initializer
+let myObject = {}
 
-    myObject
-      >> {}
+myObject
+  >> {}
 
-    // defining "a" and "b" properties and setting their values using dot notation
-    myObject.a = 100
-    myObject.b = 50
+// defining "a" and "b" properties and setting their values using dot notation
+myObject.a = 100
+myObject.b = 50
+```
 
 Next, we can define a method called "mySum" on myObject. When mySum calls on `this`, `this` refers to myObject:
 
-    // example demonstrating the scope of this inside an object
-    myObject.mySum = function() {return this.a + this.b}
+```javascript
+// example demonstrating the scope of this inside an object
+myObject.mySum = function() {return this.a + this.b}
 
-    myObject.mySum()
-      >>150
+myObject.mySum()
+  >>150
 
-    // another example
-    myObject.newFunction = function() {console.log(this)}
+// another example
+myObject.newFunction = function() {console.log(this)}
 
-    myObject.newFunction()
-      >> {a: 100, b: 50, mySum: ƒ, newFunction: ƒ}
+myObject.newFunction()
+  >> {a: 100, b: 50, mySum: ƒ, newFunction: ƒ}
+```
 
 ### Arrow Functions: Explicitly Setting `this`
 
@@ -73,36 +73,40 @@ If you are not familiar with this concept, you should work through their [Liftin
 
 Interestingly, in FB's example they use `bind` instead of arrow functions to set the value of `this`:
 
-    // using .bind
-    class Calculator extends React.Component {
-      constructor(props) {
-        super(props);
-        this.handleCelsiusChange = this.handleCelsiusChange.bind(this);
-        this.handleFahrenheitChange = this.handleFahrenheitChange.bind(this);
-        this.state = {temperature: '', scale: 'c'};
-      }
+```javascript
+// using .bind
+class Calculator extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleCelsiusChange = this.handleCelsiusChange.bind(this);
+    this.handleFahrenheitChange = this.handleFahrenheitChange.bind(this);
+    this.state = {temperature: '', scale: 'c'};
+  }
 
-      handleCelsiusChange(temperature) {
-        this.setState({scale: 'c', temperature});
-      }
+  handleCelsiusChange(temperature) {
+    this.setState({scale: 'c', temperature});
+  }
 
-      handleFahrenheitChange(temperature) {
-        this.setState({scale: 'f', temperature});
-      }
+  handleFahrenheitChange(temperature) {
+    this.setState({scale: 'f', temperature});
+  }
+```
 
 FB's example can easily be refactored using the arrow function instead of bind:
 
-    // using the arrow function
+```javascript
+// using the arrow function
 
-    class Calculator extends React.Component {
-      constructor(props) {
-        super(props);
-        this.state = {temperature: '', scale: 'c'};
-      }
+class Calculator extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {temperature: '', scale: 'c'};
+  }
 
-      handleCelsiusChange = (temperature) => {this.setState({scale: 'c', temperature});}
+  handleCelsiusChange = (temperature) => {this.setState({scale: 'c', temperature});}
 
-      handleFahrenheitChange = (temperature) => {this.setState({scale: 'f', temperature});}
+  handleFahrenheitChange = (temperature) => {this.setState({scale: 'f', temperature});}
+```
 
 [Here](https://codepen.io/edezekiel/pen/GPaOMr) is the codepen to my version using the arrow function.
 

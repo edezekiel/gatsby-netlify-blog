@@ -33,18 +33,20 @@ Faker is amazing. It lets you build seed data amazingly fast with just a few lin
 
 Here is the entirety of my db.seed file for my mod 3 project:
 
-    Blend.destroy_all
+```ruby
+Blend.destroy_all
 
-    Note.destroy_all
+Note.destroy_all
 
-    20.times do
-      b = Blend.create(
-          name: Faker::Coffee.blend_name,
-          origin: Faker::Coffee.origin,
-          variety: Faker::Coffee.variety
-      )
-      Note.create(blend_id: b.id, body: Faker::Coffee.notes)
-    end
+20.times do
+  b = Blend.create(
+      name: Faker::Coffee.blend_name,
+      origin: Faker::Coffee.origin,
+      variety: Faker::Coffee.variety
+  )
+  Note.create(blend_id: b.id, body: Faker::Coffee.notes)
+end
+```
 
 With this seed file, I had enough data to test my rails associations and render my website.
 
