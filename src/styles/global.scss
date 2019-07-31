@@ -412,7 +412,7 @@ button:hover {
   main {
     padding: 5vh 5vw 0 5vw;
     margin: 0;
-    min-height: 90vh;
+    min-height: 50vh;
     width: 100vw;
     margin-bottom: 10vh;
   }
@@ -457,5 +457,16 @@ button:hover {
   footer {
     margin-bottom: 10vh;
     padding: 0 5vw 0 5vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas:
+      "twitter"
+      "github"
+      "linkedin"
+      "copyright"
+      "build"
+      "icons";
   }
 }
