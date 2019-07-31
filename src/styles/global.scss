@@ -216,8 +216,7 @@ footer {
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   justify-items: center;
-  grid-template-areas:
-    "twitter github linkedin";
+  grid-template-areas: "twitter github linkedin";
   a {
     color: rgb(100, 58, 184);
   }
@@ -318,7 +317,6 @@ button:hover {
       align-items: center;
       width: 100%;
       border-top: 2px solid black;
-
       h3,
       p {
         margin: 5px 0 0 0;
@@ -327,6 +325,7 @@ button:hover {
       }
 
       h3 {
+        color: #6b37bf;
         padding-top: 5px;
       }
     }
@@ -378,7 +377,8 @@ button:hover {
   .heroBanner h1 {
     padding: 0;
   }
-  main, article {
+  main,
+  article {
     width: 90vw;
   }
 }
