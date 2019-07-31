@@ -64,6 +64,7 @@ try {
     .toString("base64");
   console.log("FN: unlock", "Success! Results:"), transactionXDR);
   return transactionXDR;
+}
 ```
 
 #### How do I set timebounds?
