@@ -10,28 +10,28 @@ function ContactPage(props) {
     query {
       github: file(relativePath: { eq: "github.png" }) {
         childImageSharp {
-          fixed {
+          fixed(width: 48, height: 48) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       linkedin: file(relativePath: { eq: "linkedin.png" }) {
         childImageSharp {
-          fixed {
+          fixed(width: 48, height: 48) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       twitter: file(relativePath: { eq: "twitter.png" }) {
         childImageSharp {
-          fixed {
+          fixed(width: 48, height: 48) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       email: file(relativePath: { eq: "email.png" }) {
         childImageSharp {
-          fixed {
+          fixed(width: 48, height: 48) {
             ...GatsbyImageSharpFixed
           }
         }
