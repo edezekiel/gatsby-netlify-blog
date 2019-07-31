@@ -2,7 +2,7 @@
 date: 2019-04-06
 title: "Total Recall"
 published: false
-tags: ["blockchain", "beginners", "webdev"]
+tags: ["beginners", "webdev"]
 canonical_url:
 cover_image: ../../images/coverImages/2019-04-06-cover-image.jpeg
 ---

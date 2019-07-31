@@ -183,7 +183,6 @@ a {
 article {
   background-color: rgb(252, 250, 255);
   width: 60vw;
-  text-align: justify;
   line-height: 2rem;
   font-size: 1.3rem;
   p,
@@ -378,6 +377,9 @@ button:hover {
   }
   .heroBanner h1 {
     padding: 0;
+  }
+  main, article {
+    width: 90vw;
   }
 }
 
