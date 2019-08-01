@@ -18,7 +18,7 @@ const config = {
   userLocation: 'Memphis, TN',
   userAvatar: 'https://api.adorable.io/avatars/150/test.png',
   userDescription:
-    'With experience in Ruby on Rails, JavaScript, and React and a background in law, I discovered web development through working at a legal tech startup.',
+    'With experience in JavaScript, React, and Ruby on Rails, and a background in law, I discovered web development through working at a legal tech startup.',
   menuLinks: [
     {
       name: 'Me',
