@@ -30,7 +30,7 @@ function IndexPage({ data }) {
         <div>
           <a
             href="https://twitter.com/EdwardAEzekiel?ref_src=twsrc%5Etfw"
-            class="twitter-follow-button"
+            className="twitter-follow-button"
             data-size="large"
             data-show-screen-name="false"
           ></a>

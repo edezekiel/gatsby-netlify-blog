@@ -92,19 +92,7 @@ const transaction = new StellarSdk.TransactionBuilder(escrowAccount, {
 
 ## 4. Instructions
 
-In order to use this tool you'll need to create at least two testnet accounts. You can make new accounts within the tool by clicking the "Create Stellar Account" button. Just take note of the public and private keys that pop up in the header. You can also use these pre-made test accounts:
-
-<section>
-
-#### Seller/Destination
-
-Public Key: GCHVXWBLCPWRMAF7QNKPB22JJX6VYTMX2JQ5XAVMEM6PD5HRHF42EZIC SecretKey: SAI2UOI47OBALUI4YAUVPZ3QN3LTYM5CXP3MEKGQR64OWVSLT6M7Q2VK
-
-#### Buyer
-
-Public Key: GDEJU3BKAPMDP3SAXEE5C5T2IE6363ZSZMR7SS3YZTOQJZ3L24YJSZ4G Secret Key: SDCS7UCINHWVEWFUNHRXZRUU5WQ7ZAIPHXQNED4IBQ2U6Y45W72U22ST
-
-</section>
+In order to use this tool you'll need to create at least two testnet accounts. You can make new accounts within the tool by clicking the "Create Stellar Account" button. Just take note of the public and private keys that pop up in the header.
 
 **Note:** these are test accounts so no real money is involved. You should never post a secret key to an account on the public stellar server.
 
