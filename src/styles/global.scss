@@ -216,10 +216,13 @@ footer {
   height: 30vh;
   border-top: 1px solid #6b37bf;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-items: center;
-  grid-template-areas: "twitter github linkedin";
+  grid-template-areas:
+    "copyright source"
+    "gatsby netlify"
+    "prism icons";
   a {
     color: rgb(100, 58, 184);
   }
@@ -463,9 +466,6 @@ button:hover {
     align-items: center;
     justify-items: center;
     grid-template-areas:
-      "twitter"
-      "github"
-      "linkedin"
       "copyright"
       "build"
       "icons";

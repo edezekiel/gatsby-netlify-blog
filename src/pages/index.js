@@ -22,7 +22,17 @@ function IndexPage({ data }) {
       <section className="heroBanner">
         <h1>Hi, I'm Ed</h1>
         <h2 className="headingCaption">
-          I'm a full-stack software developer with a beginner's mind.{" "}
+          I'm a full-stack software developer{" "}
+          <span role="img" aria-label="wave">
+            🧰
+          </span>{" "}
+          <span role="img" aria-label="wave">
+            🌐
+          </span>
+          . Nice to meet you{" "}
+          <span role="img" aria-label="wave">
+            😀
+          </span>.
         </h2>
       </section>
 

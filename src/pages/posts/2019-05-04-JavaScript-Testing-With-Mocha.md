@@ -7,9 +7,9 @@ canonical_url:
 cover_image: ../../images/coverImages/2019-05-04-cover-image.jpeg
 ---
 
-## Javascript Testing
-
 One of my favorite parts about going to a coding bootcamp was all the automated tests. It was incredibly helpful to see whether my code contained errors, and to get hints about what might be causing those errors.
+
+## Javascript Testing
 
 Now that I've graduated it's up to me to write those tests for my own projects!
 

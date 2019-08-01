@@ -7,9 +7,9 @@ canonical_url:
 cover_image: ../../images/coverImages/2019-04-12-cover-image.jpeg
 ---
 
-## ECMAScript
-
 We spent a lot of time at Flatiron learning about ES6 features (arrow functions, spread operators, etc.). Today I decided to explore features from subsequent ECMAScript versions and built [this](https://codepen.io/edezekiel/pen/PgKwKe?editors=1111) app!
+
+## ECMAScript
 
 ES6 and ECMAScript don't sound familiar to you, then check out [this](https://medium.com/@madasamy/javascript-brief-history-and-ecmascript-es6-es7-es8-features-673973394df4) great overview on Medium. This article summarizes a lot of the major new features from ES6 through ES9
 

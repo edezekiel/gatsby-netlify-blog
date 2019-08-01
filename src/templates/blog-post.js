@@ -36,7 +36,7 @@ export default ({ data }) => {
           </a>{" "}
           /{" "}
           <a
-            class="twitter-share-button"
+            className="twitter-share-button"
             href="https://twitter.com/intent/tweet?text=Hello%20world"
             data-size="large"
             data-show-screen-name="false"

@@ -7,8 +7,6 @@ canonical_url:
 cover_image: ../../images/coverImages/2019-07-23-cover-image.jpeg
 ---
 
-## Stellar Wallet for Testing Mutisignature Escrow Account with Time Lock & Recovery.
-
 I am very happy to announce the [Live](https://stellar-wallet.netlify.com) version of my open-source Stellar testnet wallet. Here is the code on [Github](https://github.com/edezekiel/stellar-wallet).
 
 This is for Stellar enthusiasts and anyone working on stellar smart contracts. Below, I'll (1) explain why this tool is useful, (2) discuss some background information about Stellar smart contracts, (3) provide short answers to some of the most challenging questions I faced during development, (4) give brief instructions on how to use this tool, and (5) list some resources that I found helpful.

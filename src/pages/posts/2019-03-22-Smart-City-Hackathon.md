@@ -7,8 +7,6 @@ canonical_url:
 cover_image: ../../images/coverImages/2019-03-22-cover-image.jpeg
 ---
 
-## Attending a Hackathon
-
 I participated in my first Hackathon last weekend! It was Memphis' "Smart City" Hackathon. I coded with a group of blockchain developers from web3devs on project we called "BlockSaver." Here is the [Github](https://github.com/edezekiel/blocksaver) link.
 
 The Hackathon theme was transportation and mobility, with a special focus on pedestrian safety. There are dozens of pedestrian deaths each year in Memphis.

@@ -7,8 +7,6 @@ canonical_url:
 cover_image: ../../images/coverImages/2019-04-06-cover-image.jpeg
 ---
 
-## Blockchain in Supply Chain
-
 Earlier this week I went to a meetup called "Blockchain in Supply Chain with IBM." The presenter was Kurt Wedgwood, IBM North America Blockchain Leader.
 
 The event was hosted at the University of Memphis' UMRF Research Park (a.k.a. "Communitech"). I've already been to a few events at Communitech and it is a great space!
