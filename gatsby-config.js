@@ -16,13 +16,6 @@ module.exports = {
       options: {
         trackingId: "UA-127685480-1",
         head: true,
-        // Setting this parameter is optional
-        anonymize: true,
-        // Setting this parameter is also optional
-        respectDNT: true,
-        // Any additional optional fields
-        sampleRate: 5,
-        siteSpeedSampleRate: 10,
       },
     },
     `gatsby-plugin-twitter`,
