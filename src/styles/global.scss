@@ -181,6 +181,14 @@ a {
   margin-top: 1vh;
 }
 
+.blog-post-social {
+  display: flex;
+}
+
+.blog-post-social > div {
+  margin: 5px;
+}
+
 // ARTICLE
 //----------------------------------------------------------------------
 article {

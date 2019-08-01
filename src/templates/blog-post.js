@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 
 import Layout from "../components/layout"
 import { editOnGithub } from "../../utils/global"
+import GitHubButton from "react-github-btn"
 
 export default ({ data }) => {
   const post = data.markdownRemark
@@ -26,15 +27,18 @@ export default ({ data }) => {
         className="postShowPageImage"
         fluid={post.frontmatter.cover_image.childImageSharp.fluid}
       />
-      <section className="social-buttons">
+      <section className="blog-post-social">
         <div>
-          <a href={editOnGithub(post)} target="blank">
-            Github{" "}
-            <span role="img" aria-label="pen">
-              🖊️
-            </span>
-          </a>{" "}
-          /{" "}
+          <GitHubButton
+            href={editOnGithub(post)}
+            target="blank"
+            data-size="large"
+            aria-label="Edit on GitHub"
+          >
+            Edit
+          </GitHubButton>
+        </div>
+        <div>
           <a
             className="twitter-share-button"
             href="https://twitter.com/intent/tweet?text=Hello%20world"
