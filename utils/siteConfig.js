@@ -14,7 +14,7 @@ const config = {
   disqusShortname: 'edezekiel',
   userName: 'Ed',
   userEmail: 'ed.a.ezekiel@gmail.com',
-  userTwitter: 'edezekiel',
+  userTwitter: 'EdwardAEzekiel',
   userLocation: 'Memphis, TN',
   userAvatar: 'https://api.adorable.io/avatars/150/test.png',
   userDescription:

@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-
+import config from "../../utils/siteConfig"
 import Helmet from "react-helmet"
 import SEO from "../components/seo"
 
@@ -11,6 +11,10 @@ import GitHubButton from "react-github-btn"
 
 export default ({ data }) => {
   const post = data.markdownRemark
+
+  const textParam = encodeURIComponent(post.frontmatter.title)
+  const urlParam = `${config.siteUrl}${post.fields.slug}`
+  const twitterURL = `https://twitter.com/intent/tweet?text=${textParam}&url=${urlParam}&via=${config.userTwitter}`
 
   return (
     <Layout>
@@ -41,7 +45,7 @@ export default ({ data }) => {
         <div>
           <a
             className="twitter-share-button"
-            href="https://twitter.com/intent/tweet?text=Hello%20world"
+            href={twitterURL}
             data-size="large"
             data-show-screen-name="false"
           >
