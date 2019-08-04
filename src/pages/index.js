@@ -24,7 +24,7 @@ function IndexPage({ data }) {
         <h2 className="headingCaption">
           I'm a full-stack software developer{" "}
           <span role="img" aria-label="wave">
-            🧰
+            ⚙️
           </span>{" "}
           <span role="img" aria-label="wave">
             🌐
