@@ -71,12 +71,9 @@ This is what I came up with:
 ```javascript
 class Group {
   constructor(arr) {
-    if (arr === undefined) {
-	  	this.entries = [];
-    } else {
-      this.entries = arr
-    }
+	  this.entries = [];
   }
+  
   add(val) {
 	if (!(this.has(val))) {
       this.entries.push(val);
@@ -94,7 +91,11 @@ class Group {
   }
   
   static from(arr) {
-    return new Group(arr)
+    let newGroup = new Group();
+    for (let i = 0; i < arr.length; i++) {
+    	newGroup.add(arr[i]);
+    }
+    return newGroup;
   }
 }
 ```
