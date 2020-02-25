@@ -2,7 +2,7 @@
 date: 2018-12-02
 title: "Ruby on Rails - Why form_for Uses Instance Variables"
 published: false
-tags: ["ruby", "bootcamp", "webdev"]
+tags: ["ruby", "bootcamp"]
 canonical_url:
 cover_image: ../../images/coverImages/2018-12-02-cover-image.jpeg
 ---

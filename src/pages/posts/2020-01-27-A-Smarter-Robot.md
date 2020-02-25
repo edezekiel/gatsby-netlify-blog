@@ -2,7 +2,7 @@
 date: 2020-01-27
 title: "A Smarter Robot - Eloquent JavaScript Continued"
 published: false
-tags: ["javascript", "webdev", "showdev"]
+tags: ["javascript", "projects"]
 canonical_url:
 cover_image: ../../images/coverImages/2020-01-27-cover-image.jpeg
 ---

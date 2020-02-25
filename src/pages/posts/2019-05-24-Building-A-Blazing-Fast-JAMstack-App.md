@@ -2,7 +2,7 @@
 date: 2019-05-24
 title: "Building a Blazing Fast JAMstack App"
 published: false
-tags: ["javascript", "jamstack", "showdev"]
+tags: ["javascript", "jamstack", "projects"]
 canonical_url:
 cover_image: ../../images/coverImages/2019-05-24-cover-image.jpeg
 ---

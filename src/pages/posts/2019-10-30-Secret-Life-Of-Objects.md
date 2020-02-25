@@ -2,7 +2,7 @@
 date: 2019-10-30
 title: "The Secret Life of Objects"
 published: false
-tags: ["javascript", "webdev", "beginners"]
+tags: ["javascript"]
 canonical_url:
 cover_image: ../../images/coverImages/2019-10-30-cover-image.jpeg
 ---

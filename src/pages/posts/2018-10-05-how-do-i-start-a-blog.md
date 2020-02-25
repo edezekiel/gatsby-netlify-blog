@@ -2,7 +2,7 @@
 date: 2018-10-05
 title: "How Do I Start A Blog?"
 published: false
-tags: ["webdev", "beginners", "career"]
+tags: ["projects"]
 canonical_url:
 cover_image: ../../images/coverImages/2018-10-05-cover-image.jpeg
 ---

@@ -2,12 +2,12 @@
 date: 2019-01-04
 title: "Mod 3 Flatiron Project - Coffee Break"
 published: false
-tags: ["javascript", "ruby", "bootcamp", "showdev"]
+tags: ["javascript", "ruby", "bootcamp", "projects", "agile"]
 canonical_url:
 cover_image: ../../images/coverImages/2019-01-04-cover-image.jpeg
 ---
 
-January marks the beginning of 2019 and the end of mod 3\. This mod has been the most challenging yet. As I discussed in my last blog post, it took me a while to wrap my head around several mod 3 concepts.
+January marks the beginning of 2019 and the end of mod 3. This mod has been the most challenging yet. As I discussed in my last blog post, it took me a while to wrap my head around several mod 3 concepts.
 
 After weeks of debugging, practicing, and coding, I have finally completed my mod 3 project! Here are links to the [frontend](https://github.com/edezekiel/frontend-coffee-bulma) and [backend](https://github.com/edezekiel/backend-coffee-bulma).
 

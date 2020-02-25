@@ -2,7 +2,7 @@
 date: 2018-11-16
 title: "Groupie - My First CLI"
 published: false
-tags: ["ruby", "bootcamp", "showdev"]
+tags: ["ruby", "bootcamp", "projects", "shell"]
 canonical_url:
 cover_image: ../../images/coverImages/2018-11-16-cover-image.jpeg
 ---

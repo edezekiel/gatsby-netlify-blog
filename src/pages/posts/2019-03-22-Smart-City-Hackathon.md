@@ -2,7 +2,7 @@
 date: 2019-03-22
 title: "Smart City Hackathon"
 published: false
-tags: ["react", "beginners", "showdev"]
+tags: ["react", "projects"]
 canonical_url:
 cover_image: ../../images/coverImages/2019-03-22-cover-image.jpeg
 ---

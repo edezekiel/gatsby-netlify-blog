@@ -2,7 +2,7 @@
 date: 2019-04-12
 title: "Async Timer"
 published: false
-tags: ["javascript", "showdev", "webdev"]
+tags: ["javascript", "projects"]
 canonical_url:
 cover_image: ../../images/coverImages/2019-04-12-cover-image.jpeg
 ---

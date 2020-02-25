@@ -2,7 +2,7 @@
 date: 2019-01-17
 title: 'Using Javascript "this" Keyword in React'
 published: false
-tags: ["javascript", "bootcamp", "webdev"]
+tags: ["javascript", "bootcamp"]
 canonical_url:
 cover_image: ../../images/coverImages/2019-01-17-cover-image.jpeg
 ---

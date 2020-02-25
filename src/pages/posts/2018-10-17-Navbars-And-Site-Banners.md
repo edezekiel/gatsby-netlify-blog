@@ -2,7 +2,7 @@
 date: 2018-10-17
 title: "Navbars and Site Banners"
 published: false
-tags: ["css", "beginners", "webdev"]
+tags: ["css"]
 canonical_url:
 cover_image: ../../images/coverImages/2018-10-17-cover-image.jpeg
 ---

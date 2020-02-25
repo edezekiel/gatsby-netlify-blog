@@ -2,7 +2,7 @@
 date: 2018-12-21
 title: "fetch() - A Line-By-Line Walkthrough"
 published: false
-tags: ["javascript", "bootcamp", "webdev"]
+tags: ["javascript", "bootcamp"]
 canonical_url:
 cover_image: ../../images/coverImages/2018-12-21-cover-image.jpeg
 ---

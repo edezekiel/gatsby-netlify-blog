@@ -2,7 +2,7 @@
 date: 2019-08-29
 title: "Learning GraphQL"
 published: false
-tags: ["graphql", "webdev", "beginners"]
+tags: ["graphql", "jamstack"]
 canonical_url:
 cover_image: ../../images/coverImages/2019-08-29-cover-image.jpeg
 ---

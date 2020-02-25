@@ -2,7 +2,7 @@
 date: 2019-05-17
 title: "Looping Using ES6 Syntax"
 published: false
-tags: ["javascript", "webdev", "beginners"]
+tags: ["javascript"]
 canonical_url:
 cover_image: ../../images/coverImages/2019-05-17-cover-image.jpeg
 ---

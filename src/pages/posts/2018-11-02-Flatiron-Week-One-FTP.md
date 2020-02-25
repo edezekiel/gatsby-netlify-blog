@@ -2,7 +2,7 @@
 date: 2018-11-02
 title: "Flatiron Week One, File Transfer Protocol"
 published: false
-tags: ["webdev", "bootcamp", "beginners"]
+tags: ["bootcamp", "agile"]
 canonical_url:
 cover_image: ../../images/coverImages/2018-11-02-cover-image.jpeg
 ---

@@ -2,7 +2,7 @@
 date: 2019-06-26
 title: "Coding Tips For New Web Developers."
 published: false
-tags: ["react", "beginners", "career", "javascript"]
+tags: ["react", "javascript"]
 canonical_url:
 cover_image: ../../images/coverImages/2019-06-26-cover-image.jpeg
 ---

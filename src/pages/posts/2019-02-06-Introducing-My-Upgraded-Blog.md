@@ -2,7 +2,7 @@
 date: 2019-02-06
 title: "Introducing My Upgraded Blog!"
 published: false
-tags: ["react", "ruby", "showdev", "webdev"]
+tags: ["react", "ruby", "projects"]
 canonical_url:
 cover_image: ../../images/coverImages/2019-02-06-cover-image.jpeg
 ---

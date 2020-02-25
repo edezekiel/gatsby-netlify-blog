@@ -2,7 +2,7 @@
 date: 2019-06-01
 title: "Becoming a Web Developer"
 published: false
-tags: ["career", "beginners", "webdev"]
+tags: ["bootcamp"]
 canonical_url:
 cover_image: ../../images/coverImages/2019-06-01-cover-image.jpeg
 ---

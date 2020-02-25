@@ -2,7 +2,7 @@
 date: 2019-11-15
 title: "The Secret Life of Objects, Part 2"
 published: false
-tags: ["javascript", "webdev", "beginners"]
+tags: ["javascript"]
 canonical_url:
 cover_image: ../../images/coverImages/2019-11-15-cover-image.jpeg
 ---
