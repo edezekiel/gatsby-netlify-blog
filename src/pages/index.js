@@ -69,8 +69,8 @@ function IndexPage({ data }) {
         <h2>About Me</h2>
 
         <p>
-          I live in Memphis, TN with my wife, daughter, and two dogs. I work at
-          Ubiquisoft as a front-end software developer.
+          I live in Memphis, TN with my wife, daughter, and two dogs (go Grizz!). I work at <a href="https://www.ubiquisoft.com/">Ubiquisoft</a> as 
+          a full-stack software developer.
         </p>
 
         <p>
@@ -80,7 +80,7 @@ function IndexPage({ data }) {
 
         <p>
           In 2018 I enrolled in Flatiron's immersive software engineering
-          bootcamp. It was an incredible experience. I learned JavaScript,
+          bootcamp. It was an incredible experience where I learned JavaScript,
           React, Redux, Ruby, and Rails. I also got my first taste of peer
           programming and agile software development.
         </p>
