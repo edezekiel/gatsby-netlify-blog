@@ -65,24 +65,11 @@ function IndexPage({ data }) {
         </div>
       </section>
 
-      <article className="aboutMe">
-        <h2>About Me</h2>
-
+      <article className="aboutMe">        
         <p>
-          I live in Memphis, TN with my wife, daughter, and two dogs (go Grizz!). I work at <a href="https://www.ubiquisoft.com/">Ubiquisoft</a> as 
-          a full-stack software developer.
-        </p>
-
-        <p>
-          My passion for coding began at a legal tech company. I started working
-          there as an attorney, but steadily got hooked on programming.
-        </p>
-
-        <p>
-          In 2018 I enrolled in Flatiron's immersive software engineering
-          bootcamp. It was an incredible experience where I learned JavaScript,
-          React, Redux, Ruby, and Rails. I also got my first taste of peer
-          programming and agile software development.
+          I'm a full stack web developer with a passion for solving problems.
+          With experience in Ruby on Rails, JavaScript, and React and a background in law, 
+          I discovered web development through working at a legal tech startup.
         </p>
       </article>
     </Layout>

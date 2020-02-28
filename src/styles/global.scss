@@ -44,16 +44,13 @@ header {
       grid-column: 1;
     }
     #nav-blog {
-      grid-column: 4;
-    }
-    #nav-projects {
       grid-column: 5;
     }
-    #nav-contact {
+    #nav-me {
       grid-column: 6;
     }
     a {
-      height: 10vh;
+      height: 8vh;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -74,7 +71,7 @@ main {
   width: 60vw;
   margin: 0 auto;
   background-color: rgb(252, 250, 255);
-  padding: 18vh 0 15vh 0;
+  padding: 12vh 0 15vh 0;
 }
 
 a {
@@ -115,20 +112,30 @@ a {
 //----------------------------------------------------------------------
 
 .contact-links {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  line-height: 4vh;
+  margin: 0;
+  font-size: 1.3rem;
+
+  ul {
+    margin: 5px 0 0 0;
+  }
+
+  h1 {
+    margin-top: 5vh;
+    padding-bottom: 0px;
+  }
 }
 
 .contact-link {
   color: #6b37bf;
-  margin: 50px;
 }
 
 .contact-link:hover {
   color: blue;
+}
+
+.tech-skill-link {
+  line-height: 4vh;
 }
 
 // PostLinks and Tags
@@ -221,16 +228,14 @@ article {
 // FOOTER
 //----------------------------------------------------------------------
 footer {
-  height: 30vh;
+  height: 20vh;
   border-top: 1px solid #6b37bf;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   align-items: center;
   justify-items: center;
   grid-template-areas:
-    "copyright source"
-    "gatsby netlify"
-    "prism icons";
+    "empty copyright source gatsby netlify empty";
   a {
     color: rgb(100, 58, 184);
   }
@@ -408,12 +413,9 @@ button:hover {
         display: 1;
       }
       #nav-blog {
-        grid-column: 2;
-      }
-      #nav-projects {
         grid-column: 3;
       }
-      #nav-contact {
+      #nav-me {
         grid-column: 4;
       }
       h2 {
