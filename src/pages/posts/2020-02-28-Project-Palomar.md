@@ -9,17 +9,19 @@ cover_image: ../../images/coverImages/2020-02-28-cover-image.jpeg
 
 I've spent the past month at Ubiquisoft building a new Spring Boot app. It has been a flurry of excitement, roadblocks, teamwork, and victories.
 
-I'll refer to the Spring Boot app as "Palomar". Palomar is the backend for an iOS app. The persistence layer is an Oracle database. We used agile methods like stand-ups and weekly iterations.
+I'll refer to the Spring Boot app as "Palomar". Palomar is the backend for an iOS app. The persistence layer is an Oracle database. 
+
+I'm really happy with how the Palomar MVP turned out. The app requires zero configuration to install, has an in-memory database for development, and seeds the database with realistic data. It's also set up for Continuous Integration (GitHub Actions), and is ready to be dropped in a production environment.
 
 This blog post highlights what I've learned about Spring Boot, Database Management, and Agile methodologies.
 
 ## Spring Boot
 
-Palomar is my first professional Spring Boot app. I'm actually quite pleased with how it turned out. The app requires zero configuration to install and use, it has in-memory database for development, and it seeds the database with realistic data. It's set up for Continuous Integration, and ready to be dropped in a production environment.
+Palomar is my first professional Spring Boot app. I wanted it to be as easy as possible for a new developer to clone the repo down and start contributing quickly. So, I used spring profiles, a few Maven tricks, JPA, Hibernate, and h2 to help make this as easy as possible.
 
 ### Spring Profiles
 
-Spring Profiles let you set configuration options for different environments. For example, it lets you use an in-memory database for testing and an actual database in production. Spring Profiles can be set using files in the "resources" folder.
+Spring profiles allow for different configuration options to apply in different environments For example, you can use an in-memory database for testing and an actual database in production. Spring Profiles can be set using files in the "resources" folder.
 
 Newly initialized spring boot apps have a "resources" folder with an "application.properties" file. Properties files are mainly used for Java related technologies to store configuration settings.
 
@@ -58,7 +60,6 @@ Project Palomar's pom.xml file lists several <code>profiles</code>, including "d
       <spring.profiles.active>oracle</spring.profiles.active>
     </properties>
   </profile>
-  <profile>
 </profiles>
 ```
 
