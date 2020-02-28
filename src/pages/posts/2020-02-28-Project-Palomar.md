@@ -19,7 +19,7 @@ Palomar is my first professional Spring Boot app. I'm actually quite pleased wit
 
 ### Spring Profiles
 
-Spring Profiles let you set configuration options for different environments. For example, it let's you use an in-memory database for testing and an actual database in production. Spring Profiles can be set using files in the "resources" folder.
+Spring Profiles let you set configuration options for different environments. For example, it lets you use an in-memory database for testing and an actual database in production. Spring Profiles can be set using files in the "resources" folder.
 
 Newly initialized spring boot apps have a "resources" folder with an "application.properties" file. Properties files are mainly used for Java related technologies to store configuration settings.
 
@@ -165,7 +165,7 @@ You can use the create.sql file as the basis for a schema.sql file in production
 
 ## Agile Methodologies
 
-One of my favorite parts about working on this project was the development process my team used. We went all-in with agile methodologies. We intentionally modeled our development life-cyle based on the [Extreme Programming](http://www.extremeprogramming.org/) flavor of Agile.
+One of my favorite parts about working on this project was the development process my team used. We went all-in with agile methodologies. We intentionally modeled our development life-cycle based on the [Extreme Programming](http://www.extremeprogramming.org/) flavor of Agile.
 
 ### Methodologies
 
