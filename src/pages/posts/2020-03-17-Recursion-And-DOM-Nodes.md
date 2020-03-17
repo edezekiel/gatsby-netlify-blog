@@ -55,7 +55,7 @@ Thank you [stack overflow](https://stackoverflow.com/questions/10865025/merge-fl
 
 <h2>Reduce</h2>
 
-My solution makes use of the native JavaScript Array method <code>reduce</code>. As usual, [mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce) has great documention on this method.
+My solution makes use of the native JavaScript Array method <code>reduce</code>. As usual, [mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce) has great documentation on this method.
 
 To summarize, the <code>reduce</code> method takes a callback 
 function (a "reducer") and an initial value. 
