@@ -2,7 +2,7 @@
 date: 2019-05-04
 title: "Javascript Testing With Mocha"
 published: false
-tags: ["javascript", "testing"]
+tags: ["javascript"]
 canonical_url:
 cover_image: ../../images/coverImages/2019-05-04-cover-image.jpeg
 ---

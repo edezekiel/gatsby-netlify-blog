@@ -1,8 +1,8 @@
 {
   "name": "gatsby-ezekiel",
   "private": true,
-  "description": "Gatsby starter blog, customized by Ed Ezekiel",
-  "version": "0.1.0",
+  "description": "Edward Ezekiel's personal website, built with Gatsby.",
+  "version": "1.0.0",
   "author": "Edward Ezekiel <ed.a.ezekiel@gmail.com>",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.18",

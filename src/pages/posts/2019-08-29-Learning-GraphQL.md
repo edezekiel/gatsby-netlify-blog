@@ -2,7 +2,7 @@
 date: 2019-08-29
 title: "Learning GraphQL"
 published: false
-tags: ["graphql", "jamstack"]
+tags: ["jamstack"]
 canonical_url:
 cover_image: ../../images/coverImages/2019-08-29-cover-image.jpeg
 ---
@@ -11,7 +11,7 @@ cover_image: ../../images/coverImages/2019-08-29-cover-image.jpeg
 
 A few months ago I embarked on a journey to upgrade my personal website from a React/Rails stack to a Gatsby site. One reason for this switch is because I wanted to get more familiar with [GraphQL](https://graphql.org/).
 
-With the previous version of my site, I had to make an API call to a specific Rails endpoints. Then the frontend had to accomodated whatever data was returned. Sometimes I had to make multiple HTTP requests to get all the data I needed for one component.
+With the previous version of my site, I had to make an API call to a specific Rails endpoints. Then the frontend had to accommodate whatever data was returned. Sometimes I had to make multiple HTTP requests to get all the data I needed for one component.
 
 I heard that GraphQL might be able to address these problems so I gave it a shot!
 

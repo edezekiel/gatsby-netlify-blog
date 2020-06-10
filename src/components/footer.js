@@ -3,7 +3,6 @@ import React from "react"
 function Footer(props) {
   return (
     <footer>
-      <p></p>
       <p>©{new Date().getFullYear()} Edward Ezekiel</p>
       <p>
         <a href="https://github.com/edezekiel/gatsby-netlify-blog">
@@ -20,7 +19,6 @@ function Footer(props) {
         {` `}
         <a href="https://www.gatsbyjs.org">Netlify</a>
       </p>
-      <p></p>
     </footer>
   )
 }
