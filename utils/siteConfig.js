@@ -33,8 +33,8 @@ const config = {
       link: '/contact/',
     },
   ],
-  themeColor: '#6b37bf', // Used for setting manifest and progress theme colors.
-  backgroundColor: '#6b37bf',
+  themeColor: '#100e17', // Used for setting manifest and progress theme colors.
+  backgroundColor: '#100e17',
 }
 
 // Make sure pathPrefix is empty if not needed
