@@ -21,8 +21,9 @@ function IndexPage({ data }) {
       <section className="heroBanner">
         <h1>Hi, I'm Ed</h1>
         <h2>
-          I'm a full stack web developer and former attorney. I love programming
-          and if you've stumbled on my site I bet you do too. Find me <Link to="/me" id="nav-me">
+          I'm a frontend web developer at Ubiquisoft Technologies and former
+          attorney. I believe in critical thinking, equality (in JavaScript
+          and in life), and adaptability. Find me <Link to="/me" id="nav-me">
             around the web</Link>.
         </h2>
       </section>

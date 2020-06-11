@@ -211,6 +211,7 @@ article {
 // FOOTER
 //----------------------------------------------------------------------
 footer {
+  padding-top: 10vh;
   height: 180px;
   width: 60vw;
   margin: 0 auto;
@@ -448,16 +449,16 @@ button:hover {
     grid-gap: 5vh;
   }
   footer {
-    margin-bottom: 10vh;
+    margin: 10vh 0 15vh 0;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
     justify-items: center;
     grid-template-areas:
-      "copyright"
+      "copyright" 
       "source"
-      "built"
+      "built" 
       "hosted";
-  }
+   }
 }
