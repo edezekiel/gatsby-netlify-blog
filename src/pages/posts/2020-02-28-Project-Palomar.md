@@ -2,7 +2,7 @@
 date: 2020-02-28
 title: "Project Palomar, Building a Spring Boot App the Agile Way"
 published: false
-tags: ["projects", "agile"]
+tags: ["projects", "agile", "git"]
 canonical_url:
 cover_image: ../../images/coverImages/2020-02-28-cover-image.jpeg
 ---
