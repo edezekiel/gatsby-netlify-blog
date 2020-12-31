@@ -9,7 +9,7 @@ cover_image: ../../images/coverImages/2020-12-31-cover-image.jpeg
 
 This is my second post covering my journey through the Beginner [Frontend Masters](https://frontendmasters.com/) learning path. Although I completed `Getting Started with JavaScript, v2`, and `CSS Grids and Flexbox for Responsive Web Design`, this post is about `JavaScript: From Fundamentals to Functional JS, v2`. I enjoyed the Functional course the most out of these three, so that's what I'm most inspired to write about!
 
-## Course 1 - Intro To Web Development
+## Course 2 - JavaScript: From Fundamentals to Functional JS
 
 [From Fundamentals to Functional JS](https://frontendmasters.com/courses/js-fundamentals-functional-v2/) is taught by Bianca Gandolfo. She covers high-order functions, closures, scope, and lots of fun ES6 syntax. The unifying theme of the course is replicating some common methods used in the [Lodash](https://lodash.com/) library.
 
