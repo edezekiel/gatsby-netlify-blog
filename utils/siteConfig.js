@@ -9,7 +9,7 @@ const config = {
   dateFromFormat: 'YYYY-MM-DD',
   dateFormat: 'MMMM Do, YYYY',
   siteDescription:
-    `Ed Ezekiel is full-stack software developer with a passion for solving problems.`,
+    `Ed Ezekiel is frontend web developer with a passion for solving problems.`,
   googleAnalyticsID: '',
   disqusShortname: 'edezekiel',
   userName: 'Ed',

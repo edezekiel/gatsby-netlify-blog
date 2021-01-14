@@ -41,7 +41,7 @@ function ContactPage(props) {
 
         <p>
           I live in Memphis, TN with my wife, daughter, and two dogs (go Grizz!). I work at <a href="https://www.ubiquisoft.com/">Ubiquisoft</a> as
-          a full-stack software developer.
+          a frontend web developer.
         </p>
 
         <p>
