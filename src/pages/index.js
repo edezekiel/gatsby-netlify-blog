@@ -19,12 +19,10 @@ function IndexPage({ data }) {
         ></script>
       </Helmet>
       <section className="heroBanner">
-        <h1>Hi, I'm Ed</h1>
+        <h1>Hi, I'm Ed Ezekiel.</h1>
         <h2>
-          I'm a frontend web developer at Ubiquisoft Technologies and former
-          attorney. I believe in critical thinking, equality (in JavaScript
-          and in life), and adaptability. Find me <Link to="/me" id="nav-me">
-            around the web</Link>.
+          I'm a frontend web developer and former attorney. Welcome to my web 
+          development blog. Find me <Link to="/me" id="nav-me">around the web</Link>.
         </h2>
       </section>
 
