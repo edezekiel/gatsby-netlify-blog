@@ -72,9 +72,9 @@ cd PROJECT
 git filter-repo --subdirectory-filter FRONTEND/ --tag-rename '':'frontend'
 ```
 
-6. Create FRONTEND repository in GitHub
+5. Create FRONTEND repository in GitHub
 
-7. Add the remote branch
+6. Add the remote branch
 
 ```shell
 cd FRONTEND
@@ -86,13 +86,13 @@ git branch -M main
 git push -u origin main
 ```
 
-8. Push all git branches to the remote
+7. Push all git branches to the remote
 
 ```shell
 git push remote --all
 ```
 
-Thanks for reading!
+And that's it! I hope you found this post useful and thank you for reading.
 
 ## Resources
 
